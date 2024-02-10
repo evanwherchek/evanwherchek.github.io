@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Atkinson-Hyperlegible-Regular';
+    src: url('assets/Atkinson-Hyperlegible-Regular-102.woff');
+}
+
+@font-face {
+    font-family: 'Atkinson-Hyperlegible-Bold';
+    src: url('assets/Atkinson-Hyperlegible-Bold-102.woff');
+}
+
+@font-face {
+    font-family: 'Atkinson-Hyperlegible-Italic';
+    src: url('assets/Atkinson-Hyperlegible-Italic-102.woff');
+}
+
+@font-face {
+    font-family: 'Atkinson-Hyperlegible-BoldItalic';
+    src: url('assets/Atkinson-Hyperlegible-BoldItalic-102.woff');
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.heading {
+    margin: auto;
+    text-align: center;
+    font-family: 'Atkinson-Hyperlegible-Regular';
+    font-size: 125%;
+}
+
+.introduction {
+    margin-inline-start: 20%;
+    margin-inline-end: 20%;
+    font-family: 'Atkinson-Hyperlegible-Regular';
+    font-size: 115%;
+}
+
+.list {
+    font-family: 'Atkinson-Hyperlegible-Regular';
+    display: flex;
+    justify-content: space-between;
+    margin-inline-start: 30%;
+    margin-inline-end: 30%;
+    font-size: 115%;
+}
+
+.contact {
+    text-align: center;
+    font-family: 'Atkinson-Hyperlegible-Regular';
+    font-size: 115%;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+}
