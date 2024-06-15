@@ -21,11 +21,11 @@ function App() {
       fontFamily: 'Poly, serif',
       color: '#FFFFFF',
       fontWeight: 'normal',
-      margin: '10px'
+      margin: '5px'
     },
     image: {
       width: '25%',
-      margin: '15px'
+      margin: '15px',
     },
     button: {
       backgroundColor: '#FFFFFF',
