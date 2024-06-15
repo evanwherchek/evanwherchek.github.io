@@ -24,7 +24,7 @@ function App() {
       margin: '10px'
     },
     image: {
-      width: '20%',
+      width: '25%',
       margin: '15px'
     },
     button: {
