@@ -1,9 +1,9 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import image from './image.png'
-import * as React from 'react';
-import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Stack from '@mui/material/Stack';
+import { Button } from '@mui/material';
 
 function App() {
   const styles = {
@@ -28,32 +28,35 @@ function App() {
       margin: '15px',
     },
     button: {
-      backgroundColor: '#FFFFFF',
-      borderRadius: '50%',
-      margin: '15px'
+      backgroundColor: '#808080',
+      width: '500px',
+      borderRadius: '10px',
+      textTransform: 'none',
+      fontFamily: [
+        'Arial'
+      ]
     }
   }
 
   return (
     <div style={styles.backdrop}>
-    <img src={image} style={styles.image} alt="Picture of Evan Herchek" />
+      <img src={image} style={styles.image} alt="Picture of Evan Herchek" />
       <h1 style={styles.heading}>
         Evan Herchek
       </h1>
       <h2 style={styles.heading}>
-        Software Engineer
+        Software Developer
       </h2>
-      <Stack direction="row" spacing={2}>
+      <Stack direction="column" spacing={1.5}>
         <a href='https://www.linkedin.com/in/evan-herchek/' target="_blank" rel="noopener noreferrer">
-          <IconButton style={styles.button} aria-label="LinkedIn">
-            <LinkedInIcon />
-          </IconButton>
+          <Button variant="contained" style={styles.button} aria-label="LinkedIn" startIcon={<LinkedInIcon />}>
+            LinkedIn
+          </Button>
         </a>
         <a href='https://github.com/evanwherchek' target="_blank" rel="noopener noreferrer">
-          <IconButton style={styles.button}
-            aria-label="GitHub">
-            <GitHubIcon />
-          </IconButton>
+          <Button variant="contained" style={styles.button} aria-label="GitHub" startIcon={<GitHubIcon />}>
+            GitHub
+          </Button>
         </a>
       </Stack>
     </div>
