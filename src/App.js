@@ -52,7 +52,7 @@ function App() {
           Evan Herchek
         </h1>
         <h2 style={styles.heading}>
-          Software Engineer
+          Software Developer
         </h2>
         <Stack direction="row" spacing={2}>
           <a href='https://www.linkedin.com/in/evan-herchek/' target="_blank" rel="noopener noreferrer">
