@@ -22,8 +22,8 @@ function Title() {
             textAlign: 'center',
         },
         leaf: {
-            height: '7vw',
-            width: '7vw',
+            height: '5vw',
+            width: '5vw',
         }
     }
 
