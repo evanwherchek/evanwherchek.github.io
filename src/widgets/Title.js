@@ -1,6 +1,5 @@
 import lindenSvg from '../assets/linden.svg';
 import oakSvg from '../assets/oak.svg';
-import { useInView } from 'react-intersection-observer';
 
 function Title() {
     const styles = {
@@ -27,15 +26,8 @@ function Title() {
         }
     }
 
-    const { ref, inView } = useInView ({
-        threshold: 0.1,
-        triggerOnce: true
-    });
-
     return (
-        <div
-            ref={ref}
-            className={`transition-opacity duration-5000 ${inView ? 'opacity-100' : 'opacity-0'}`}>
+        <div>
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
                 <img style={styles.leaf} src={lindenSvg} alt="Linden" />
                 <h1 style={styles.h1}>Evan Herchek</h1>

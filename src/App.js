@@ -1,4 +1,5 @@
 import Title from "./widgets/Title";
+import { motion } from "motion/react"
 
 function App() {
   const styles = {
@@ -16,7 +17,14 @@ function App() {
 
   return (
     <div style={styles.backdrop}>
-      <Title />
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 3 }}
+        >
+        <Title />
+      </motion.p>
+
     </div>
   );
 }
