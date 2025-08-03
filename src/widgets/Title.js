@@ -24,6 +24,9 @@ function Title() {
         leaf: {
             height: '5vw',
             width: '5vw',
+            marginTop: '20px',
+            marginLeft: '10px',
+            marginRight: '10px',
         }
     }
 
