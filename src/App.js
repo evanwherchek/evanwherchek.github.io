@@ -1,5 +1,5 @@
 import Title from "./widgets/Title";
-import Bio from "./widgets/Bio";
+import About from "./widgets/About";
 
 function App() {
   const styles = {
@@ -17,7 +17,7 @@ function App() {
   return (
     <div style={styles.backdrop}>
         <Title />
-        <Bio />
+        <About />
     </div>
   );
 }

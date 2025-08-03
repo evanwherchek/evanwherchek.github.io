@@ -1,7 +1,7 @@
 import headshot from '../assets/headshot.png';
 import { motion } from "motion/react"
 
-function Bio() {
+function About() {
     const styles = {
         h2: {
             fontFamily: 'Poly',
@@ -44,4 +44,4 @@ function Bio() {
     );
 }
 
-export default Bio;
+export default About;
