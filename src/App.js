@@ -1,5 +1,6 @@
 import Title from "./widgets/Title";
 import About from "./widgets/About";
+import Inspirations from "./widgets/Inspirations";
 
 function App() {
   const styles = {
@@ -18,6 +19,7 @@ function App() {
     <div style={styles.backdrop}>
         <Title />
         <About />
+        <Inspirations />
     </div>
   );
 }
