@@ -1,4 +1,5 @@
 import headshot from '../assets/headshot.png';
+import { motion } from "motion/react"
 
 function Bio() {
     const styles = {
@@ -6,7 +7,7 @@ function Bio() {
             fontFamily: 'Poly',
             color: 'white',
             fontWeight: '100',
-            fontSize: '3vw',
+            fontSize: '2vw',
             marginTop: '0',
             textAlign: 'start',
         },
@@ -17,14 +18,22 @@ function Bio() {
             fontSize: '2vw',
         },
         img: {
-            width: '30vw',
+            width: '25vw',
         }
     }
 
     return (
         <div style={{height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
             <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                <img style={styles.img} src={headshot} alt="Evan Herchek" />
+                <motion.div
+                    initial={{ opacity: 0, scale: 0 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{
+                        duration: 0.4,
+                        scale: { type: "spring", visualDuration: 0.4, bounce: 0.5 },
+                    }}>
+                    <img style={styles.img} src={headshot} alt="Evan Herchek" />
+                </motion.div>
                 <div style={{width: '5vw'}}/>
                 <div style={{width: '50vw'}}>
                     <h2 style={styles.h2}>Hello!</h2>
