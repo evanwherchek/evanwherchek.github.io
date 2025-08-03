@@ -17,14 +17,23 @@ function App() {
 
   return (
     <div style={styles.backdrop}>
-      <motion.p
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 3 }}
+      <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 1,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+      >
+        <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 3 }}
         >
-        <Title />
-      </motion.p>
-
+          <Title />
+        </motion.p>
+      </motion.div>
     </div>
   );
 }
