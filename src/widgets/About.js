@@ -5,7 +5,7 @@ function About() {
     const styles = {
         h2: {
             fontFamily: 'Poly',
-            color: 'white',
+            color: 'black',
             fontWeight: '100',
             fontSize: '2vw',
             marginTop: '0',
@@ -13,7 +13,7 @@ function About() {
         },
         p: {
             fontFamily: 'Poly',
-            color: 'white',
+            color: 'black',
             fontWeight: '100',
             fontSize: '2vw',
         },

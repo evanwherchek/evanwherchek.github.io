@@ -4,7 +4,7 @@ function Inspirations() {
     const styles = {
         h2: {
             fontFamily: 'Poly',
-            color: 'white',
+            color: 'black',
             fontWeight: '100',
             fontSize: '2vw',
             marginTop: '0',
@@ -13,7 +13,7 @@ function Inspirations() {
         },
         p1: {
             fontFamily: 'Poly',
-            color: 'white',
+            color: 'black',
             fontWeight: '100',
             fontSize: '2vw',
             marginLeft: '1vw',
@@ -21,7 +21,7 @@ function Inspirations() {
         },
         p2: {
             fontFamily: 'Poly',
-            color: '#33BBFF',
+            color: '#365b95',
             fontWeight: '100',
             fontSize: '2vw',
             marginLeft: '1vw',
@@ -34,7 +34,7 @@ function Inspirations() {
 
     return (
         <div style={{height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
-            <h2 style={styles.h2}>Things I enjoy</h2>
+            <h2 style={styles.h2}>Things that I enjoy</h2>
             <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
