@@ -1,10 +1,11 @@
 import { motion } from "motion/react"
+import backgroundImage from '../assets/wireframe.png'
 
 function Inspirations() {
     const styles = {
         h2: {
             fontFamily: 'Poly',
-            color: 'black',
+            color: 'white',
             fontWeight: '100',
             fontSize: '2vw',
             marginTop: '0',
@@ -13,7 +14,7 @@ function Inspirations() {
         },
         p1: {
             fontFamily: 'Poly',
-            color: 'black',
+            color: 'white',
             fontWeight: '100',
             fontSize: '2vw',
             marginLeft: '1vw',
@@ -21,7 +22,7 @@ function Inspirations() {
         },
         p2: {
             fontFamily: 'Poly',
-            color: '#365b95',
+            color: '#20b3ff',
             fontWeight: '100',
             fontSize: '2vw',
             marginLeft: '1vw',
@@ -33,7 +34,12 @@ function Inspirations() {
     }
 
     return (
-        <div style={{height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column'}}>
+        <div style={{height: '100vh',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            backgroundColor: '#101C2D'}}>
             <h2 style={styles.h2}>Things that I enjoy</h2>
             <motion.div
                 initial={{ opacity: 0, x: 50 }}

@@ -1,9 +1,15 @@
 import logo from '../assets/logo-1.png';
 import { motion } from "motion/react"
+import Threads from './Threads';
 
 function Title() {
     return (
         <div style={{height: '100vh', width: '100vw', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#101C2D'}}>
+            <Threads
+                amplitude={1}
+                distance={0}
+                enableMouseInteraction={true}
+            />
             <motion.div
                 initial={{ opacity: 0, y: 50 }}
                 animate={{ opacity: 1, y: 0 }}
