@@ -1,9 +1,46 @@
 import { motion } from "motion/react"
+import backgroundImage from '../assets/wireframe.png'
 
 function Inspirations() {
+    const styles = {
+        h2: {
+            fontFamily: 'Poly',
+            color: 'white',
+            fontWeight: '100',
+            fontSize: '2vw',
+            marginTop: '0',
+            textAlign: 'start',
+            textDecoration: 'underline',
+        },
+        p1: {
+            fontFamily: 'Poly',
+            color: 'white',
+            fontWeight: '100',
+            fontSize: '2vw',
+            marginLeft: '1vw',
+            marginRight: '1vw',
+        },
+        p2: {
+            fontFamily: 'Poly',
+            color: '#20b3ff',
+            fontWeight: '100',
+            fontSize: '2vw',
+            marginLeft: '1vw',
+            marginRight: '1vw',
+        },
+        img: {
+            width: '25vw',
+        }
+    }
+
     return (
-        <div>
-            <h2>Things that I enjoy</h2>
+        <div style={{height: '100vh',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            flexDirection: 'column',
+            backgroundColor: '#101C2D'}}>
+            <h2 style={styles.h2}>Things that I enjoy</h2>
             <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -12,8 +49,8 @@ function Inspirations() {
                     delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}>
-                <div>
-                    <p>Software engineering</p><p>Cooking</p><p>Learning</p>
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                    <p style={styles.p1}>Software engineering</p><p style={styles.p2}>Cooking</p><p style={styles.p1}>Learning</p>
                 </div>
             </motion.div>
             <motion.div
@@ -24,8 +61,8 @@ function Inspirations() {
                     delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}>
-                <div>
-                    <p>Analytical thinking</p><p>Travel</p><p>Automation</p>
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                    <p style={styles.p2}>Analytical thinking</p><p style={styles.p1}>Travel</p><p style={styles.p2}>Automation</p>
                 </div>
             </motion.div>
             <motion.div
@@ -36,8 +73,8 @@ function Inspirations() {
                     delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}>
-                <div>
-                    <p>Business strategy</p><p>Gardening</p><p>Fencing</p>
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                    <p style={styles.p1}>Business strategy</p><p style={styles.p2}>Gardening</p><p style={styles.p1}>Fencing</p>
                 </div>
             </motion.div>
             <motion.div
@@ -48,8 +85,8 @@ function Inspirations() {
                     delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}>
-                <div>
-                    <p>Data science</p><p>Capital management</p><p>Skiing</p>
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                    <p style={styles.p2}>Data science</p><p style={styles.p1}>Capital management</p><p style={styles.p2}>Skiing</p>
                 </div>
             </motion.div>
             <motion.div
@@ -60,8 +97,8 @@ function Inspirations() {
                     delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}>
-                <div>
-                    <p>History</p><p>Design</p><p>Hiking</p>
+                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+                    <p style={styles.p1}>History</p><p style={styles.p2}>Design</p><p style={styles.p1}>Hiking</p>
                 </div>
             </motion.div>
         </div>

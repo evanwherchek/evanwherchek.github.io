@@ -10,6 +10,17 @@ function App() {
     const [showHeader, setShowHeader] = useState(false);
     const titleRef = useRef(null);
 
+    const styles = {
+        backdrop: {
+            backgroundColor: '#ffffff',
+            position: 'absolute',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+        }
+    }
+
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {

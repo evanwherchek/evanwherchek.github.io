@@ -124,7 +124,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #e5e7eb;
   /* 2 */
 }
 
@@ -603,33 +603,16 @@ video {
   display: grid;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.w-full {
-  width: 100%;
-}
-
 .resize {
   resize: both;
-}
-
-.items-center {
-  align-items: center;
-}
-
-.justify-center {
-  justify-content: center;
 }
 
 .border {
   border-width: 1px;
 }
 
-.bg-navy {
-  --tw-bg-opacity: 1;
-  background-color: rgb(16 28 45 / var(--tw-bg-opacity, 1));
+.underline {
+  text-decoration-line: underline;
 }
 
 .blur {
