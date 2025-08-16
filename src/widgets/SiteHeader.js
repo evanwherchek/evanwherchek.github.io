@@ -5,98 +5,61 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Stack from '@mui/material/Stack';
 
 const SiteHeader = ({ scrollToSection }) => {
-    const styles = {
-        navButton: {
-            background: 'none',
-            border: 'none',
-            cursor: 'pointer',
-            padding: '0.5rem 1rem',
-            fontSize: '1rem',
-            fontFamily: 'Inter',
-            color: 'white',
-            textDecoration: 'none',
-            borderRadius: '4px',
-            transition: 'background-color 0.3s ease',
-        },
-        backdrop: {
-            position: 'sticky',
-            top: 0,
-            left: 0,
-            backgroundColor: '#101C2D',
-            display: 'grid',
-            gridTemplateColumns: '1fr auto 1fr',
-            alignItems: 'center',
-            width: '100vw'
-        },
-        logo: {
-            width: '300px'
-        }
-    }
-
     const handleNavClick = (sectionId) => {
         scrollToSection(sectionId);
     };
 
     return (
-        <header style={styles.backdrop}>
-            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                <button
-                    style={styles.navButton}
-                    onClick={() => handleNavClick('about')}
-                    onMouseOver={(e) => e.target.style.backgroundColor = '#f0f0f0'}
-                    onMouseOut={(e) => e.target.style.backgroundColor = 'transparent'}
-                >
-                    About
-                </button>
-                <button
-                    style={styles.navButton}
-                    onClick={() => handleNavClick('inspirations')}
-                    onMouseOver={(e) => e.target.style.backgroundColor = '#f0f0f0'}
-                    onMouseOut={(e) => e.target.style.backgroundColor = 'transparent'}
-                >
-                    Inspirations
-                </button>
-                <button
-                    style={styles.navButton}
-                    onClick={() => handleNavClick('projects')}
-                    onMouseOver={(e) => e.target.style.backgroundColor = '#f0f0f0'}
-                    onMouseOut={(e) => e.target.style.backgroundColor = 'transparent'}
-                >
-                    Projects
-                </button>
-                <button
-                    style={styles.navButton}
-                    onClick={() => handleNavClick('background')}
-                    onMouseOver={(e) => e.target.style.backgroundColor = '#f0f0f0'}
-                    onMouseOut={(e) => e.target.style.backgroundColor = 'transparent'}
-                >
-                    Background
-                </button>
-
-                <button
-                    style={styles.navButton}
-                    onClick={() => handleNavClick('contact')}
-                    onMouseOver={(e) => e.target.style.backgroundColor = '#f0f0f0'}
-                    onMouseOut={(e) => e.target.style.backgroundColor = 'transparent'}
-                >
-                    Contact
-                </button>
+        <header className="sticky top-0 left-0 h-16 md:h-24 p-2 bg-navy grid grid-cols-[1fr_auto_1fr] items-center w-screen">
+            <div className="flex items-center justify-center">
+                <div className="hidden lg:flex items-center">
+                    <button
+                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm md:px-4 md:text-base font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
+                        onClick={() => handleNavClick('about')}
+                    >
+                        About
+                    </button>
+                    <button
+                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm md:px-4 md:text-base font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
+                        onClick={() => handleNavClick('inspirations')}
+                    >
+                        Inspirations
+                    </button>
+                    <button
+                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm md:px-4 md:text-base font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
+                        onClick={() => handleNavClick('projects')}
+                    >
+                        Projects
+                    </button>
+                    <button
+                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm md:px-4 md:text-base font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
+                        onClick={() => handleNavClick('background')}
+                    >
+                        Background
+                    </button>
+                    <button
+                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm md:px-4 md:text-base font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
+                        onClick={() => handleNavClick('contact')}
+                    >
+                        Contact
+                    </button>
+                </div>
             </div>
 
-            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                <img style={styles.logo} src={logo} alt="logo" />
+            <div className="flex items-center justify-center">
+                <img className="w-48 md:w-64 lg:w-[300px]" src={logo} alt="logo" />
             </div>
 
-            <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                <Stack direction="row" spacing={2}>
+            <div className="flex items-center justify-center">
+                <Stack direction="row" spacing={1}>
                     <a href='https://www.linkedin.com/in/evan-herchek/' target="_blank" rel="noopener noreferrer">
-                        <IconButton style={styles.button} aria-label="LinkedIn">
-                            <LinkedInIcon style={{color: 'white'}}/>
+                        <IconButton size="small" aria-label="LinkedIn">
+                            <LinkedInIcon className="text-white text-xl"/>
                         </IconButton>
                     </a>
                     <a href='https://github.com/evanwherchek' target="_blank" rel="noopener noreferrer">
-                        <IconButton style={styles.button} aria-label="GitHub">
-                            <GitHubIcon style={{color: 'white'}}/>
+                        <IconButton size="small" aria-label="GitHub">
+                            <GitHubIcon className="text-white text-xl"/>
                         </IconButton>
                     </a>
                 </Stack>
