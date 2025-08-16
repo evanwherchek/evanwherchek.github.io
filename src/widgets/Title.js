@@ -1,16 +1,16 @@
 import logo from '../assets/logo-1.png';
 import { motion } from "motion/react"
-import Threads from './Threads';
+import Threads from './external/Threads';
 
 function Title() {
     return (
-        <div style={{height: '100vh', width: '100vw', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: '#101C2D'}}>
+        <div class="h-screen w-full bg-navy flex items-center justify-center">
             <Threads
                 amplitude={2}
                 distance={0}
                 enableMouseInteraction={false}
             />
-            <div style={{position: 'absolute'}}>
+            <div class="absolute">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
@@ -27,7 +27,6 @@ function Title() {
                     </motion.p>
                 </motion.div>
             </div>
-
         </div>
     );
 }
