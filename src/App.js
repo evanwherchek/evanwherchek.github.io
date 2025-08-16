@@ -55,7 +55,7 @@ function App() {
     };
 
     return (
-        <div style={styles.backdrop}>
+        <div>
             {showHeader && <SiteHeader scrollToSection={scrollToSection} />}
             <main>
                 <section id="home" ref={titleRef}>
