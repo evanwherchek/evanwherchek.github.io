@@ -4,13 +4,13 @@ import Threads from './external/Threads';
 
 function Title() {
     return (
-        <div class="h-screen w-full bg-navy flex items-center justify-center">
+        <div className="h-screen w-full bg-navy flex items-center justify-center">
             <Threads
                 amplitude={2}
                 distance={0}
                 enableMouseInteraction={false}
             />
-            <div class="absolute">
+            <div className="absolute">
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
