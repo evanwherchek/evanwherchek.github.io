@@ -124,7 +124,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -603,16 +603,33 @@ video {
   display: grid;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .resize {
   resize: both;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .border {
   border-width: 1px;
 }
 
-.underline {
-  text-decoration-line: underline;
+.bg-navy {
+  --tw-bg-opacity: 1;
+  background-color: rgb(16 28 45 / var(--tw-bg-opacity, 1));
 }
 
 .blur {
