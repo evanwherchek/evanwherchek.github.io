@@ -8,9 +8,10 @@ module.exports = {
       fontFamily: {
         'poly': ['"poly"', ...fontFamily.sans],
       },
-    },
-    colors: {
-      'navy': '#101C2D'
+      colors: {
+        'navy': '#101C2D',
+        'comfort-blue': '#20b3ff'
+      }
     }
   },
   plugins: [],

@@ -1,46 +1,9 @@
 import { motion } from "motion/react"
-import backgroundImage from '../assets/wireframe.png'
 
 function Inspirations() {
-    const styles = {
-        h2: {
-            fontFamily: 'Poly',
-            color: 'white',
-            fontWeight: '100',
-            fontSize: '2vw',
-            marginTop: '0',
-            textAlign: 'start',
-            textDecoration: 'underline',
-        },
-        p1: {
-            fontFamily: 'Poly',
-            color: 'white',
-            fontWeight: '100',
-            fontSize: '2vw',
-            marginLeft: '1vw',
-            marginRight: '1vw',
-        },
-        p2: {
-            fontFamily: 'Poly',
-            color: '#20b3ff',
-            fontWeight: '100',
-            fontSize: '2vw',
-            marginLeft: '1vw',
-            marginRight: '1vw',
-        },
-        img: {
-            width: '25vw',
-        }
-    }
-
     return (
-        <div style={{height: '100vh',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            flexDirection: 'column',
-            backgroundColor: '#101C2D'}}>
-            <h2 style={styles.h2}>Things that I enjoy</h2>
+        <div className="h-screen flex items-center justify-center flex-col bg-navy">
+            <h2 className="font-poly text-white font-thin text-xl md:text-2xl lg:text-3xl mt-0 text-left underline m-4">Things that I enjoy</h2>
             <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -49,8 +12,10 @@ function Inspirations() {
                     delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}>
-                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                    <p style={styles.p1}>Software engineering</p><p style={styles.p2}>Cooking</p><p style={styles.p1}>Learning</p>
+                <div className="flex items-center justify-center">
+                    <p className="font-poly text-white font-thin text-lg md:text-xl lg:text-2xl m-2">Software engineering</p>
+                    <p className="font-poly text-comfort-blue font-thin text-lg md:text-xl lg:text-2xl m-2">Cooking</p>
+                    <p className="font-poly text-white font-thin text-lg md:text-xl lg:text-2xl m-2">Learning</p>
                 </div>
             </motion.div>
             <motion.div
@@ -61,8 +26,10 @@ function Inspirations() {
                     delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}>
-                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                    <p style={styles.p2}>Analytical thinking</p><p style={styles.p1}>Travel</p><p style={styles.p2}>Automation</p>
+                <div className="flex items-center justify-center">
+                    <p className="font-poly text-comfort-blue font-thin text-lg md:text-xl lg:text-2xl m-2">Analytical thinking</p>
+                    <p className="font-poly text-white font-thin text-lg md:text-xl lg:text-2xl m-2">Travel</p>
+                    <p className="font-poly text-comfort-blue font-thin text-lg md:text-xl lg:text-2xl m-2">Automation</p>
                 </div>
             </motion.div>
             <motion.div
@@ -73,8 +40,10 @@ function Inspirations() {
                     delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}>
-                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                    <p style={styles.p1}>Business strategy</p><p style={styles.p2}>Gardening</p><p style={styles.p1}>Fencing</p>
+                <div className="flex items-center justify-center">
+                    <p className="font-poly text-white font-thin text-lg md:text-xl lg:text-2xl m-2">Business strategy</p>
+                    <p className="font-poly text-comfort-blue font-thin text-lg md:text-xl lg:text-2xl m-2">Gardening</p>
+                    <p className="font-poly text-white font-thin text-lg md:text-xl lg:text-2xl m-2">Fencing</p>
                 </div>
             </motion.div>
             <motion.div
@@ -85,8 +54,10 @@ function Inspirations() {
                     delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}>
-                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                    <p style={styles.p2}>Data science</p><p style={styles.p1}>Capital management</p><p style={styles.p2}>Skiing</p>
+                <div className="flex items-center justify-center">
+                    <p className="font-poly text-comfort-blue font-thin text-lg md:text-xl lg:text-2xl m-2">Data science</p>
+                    <p className="font-poly text-white font-thin text-lg md:text-xl lg:text-2xl m-2">Capital management</p>
+                    <p className="font-poly text-comfort-blue font-thin text-lg md:text-xl lg:text-2xl m-2">Skiing</p>
                 </div>
             </motion.div>
             <motion.div
@@ -97,8 +68,10 @@ function Inspirations() {
                     delay: 0.5,
                     ease: [0, 0.71, 0.2, 1.01],
                 }}>
-                <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
-                    <p style={styles.p1}>History</p><p style={styles.p2}>Design</p><p style={styles.p1}>Hiking</p>
+                <div className="flex items-center justify-center">
+                    <p className="font-poly text-white font-thin text-lg md:text-xl lg:text-2xl m-2">History</p>
+                    <p className="font-poly text-comfort-blue font-thin text-lg md:text-xl lg:text-2xl m-2">Design</p>
+                    <p className="font-poly text-white font-thin text-lg md:text-xl lg:text-2xl m-2">Hiking</p>
                 </div>
             </motion.div>
         </div>
