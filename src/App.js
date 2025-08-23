@@ -3,6 +3,7 @@ import Title from "./widgets/Title";
 import About from "./widgets/About";
 import Inspirations from "./widgets/Inspirations";
 import SiteHeader from "./widgets/SiteHeader";
+import Projects from "./widgets/Projects";
 
 // Original background color: #101C2D
 
@@ -66,6 +67,9 @@ function App() {
                 </section>
                 <section id="inspirations">
                     <Inspirations />
+                </section>
+                <section id="projects">
+                    <Projects />
                 </section>
             </main>
         </div>
