@@ -12,7 +12,8 @@ module.exports = {
         'navy': '#101C2D',
         'soft-white': '#FFF8F4',
         'comfort-blue': '#20b3ff',
-        'showcase-grey': '#202020',
+        'showcase-grey': '#2c26ff',
+        'panel-blue': '#010B3C',
       }
     }
   },
