@@ -19,7 +19,7 @@ function Projects () {
                         delay: 0,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}>
-                    <ProjectWindow sourceImage={coatails} projectTitle={"Coatails"} />
+                    <ProjectWindow sourceImage={coatails} projectTitle={"Coatails"} description={"Make strong professional connections"} />
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
@@ -29,7 +29,7 @@ function Projects () {
                         delay: 0.5,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}>
-                    <ProjectWindow sourceImage={reciperocal} projectTitle={"RecipeRocal"} />
+                    <ProjectWindow sourceImage={reciperocal} projectTitle={"RecipeRocal"} description={"Gamify your nutrition"}/>
                 </motion.div>
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
@@ -39,7 +39,7 @@ function Projects () {
                         delay: 1,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}>
-                    <ProjectWindow sourceImage={resutailor} projectTitle={"ResuTailor"} />
+                    <ProjectWindow sourceImage={resutailor} projectTitle={"ResuTailor"} description={"Generate a resume for any job application"}/>
                 </motion.div>
             </div>
         </div>
