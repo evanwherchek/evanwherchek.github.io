@@ -12,8 +12,9 @@ module.exports = {
         'navy': '#101C2D',
         'soft-white': '#FFF8F4',
         'comfort-blue': '#20b3ff',
-        'showcase-grey': '#2c26ff',
+        'showcase-grey': '#1A1D23',
         'panel-blue': '#010B3C',
+        'background-white': '#D5D5D5'
       }
     }
   },

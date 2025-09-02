@@ -19,7 +19,48 @@ function Projects () {
                         delay: 1,
                         ease: [0, 0.71, 0.2, 1.01],
                     }}>
-                    <ProjectWindow sourceImage={resutailor} projectTitle={"Resutailor"} description={"Generate a fine-tuned resume for any application."} year="2024"/>
+                    <ProjectWindow
+                        sourceImage={resutailor}
+                        projectTitle={"Resutailor"}
+                        description={"Generate a fine-tuned resume for any application."}
+                        year="2024"
+                        link="https://github.com/evanwherchek/resutailor"
+                        categories={['Web', 'AI']}
+                    />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        duration: 2,
+                        delay: 1,
+                        ease: [0, 0.71, 0.2, 1.01],
+                    }}>
+                    <ProjectWindow
+                        sourceImage={coatails}
+                        projectTitle={"Coatails"}
+                        description={"Make strong professional connections IRL."}
+                        year="2021 - 2024"
+                        link="https://github.com/evanwherchek/resutailor"
+                        categories={['Mobile', 'Full Stack']}
+                    />
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0, y: 50 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                        duration: 2,
+                        delay: 1,
+                        ease: [0, 0.71, 0.2, 1.01],
+                    }}>
+                    <ProjectWindow
+                        sourceImage={reciperocal}
+                        projectTitle={"RecipeRocal"}
+                        description={"Gamify your nutrition and reach your goals."}
+                        year="2024"
+                        link="https://github.com/evanwherchek/resutailor"
+                        categories={['Mobile', 'Team-developed']}
+                    />
                 </motion.div>
             </div>
         </div>
