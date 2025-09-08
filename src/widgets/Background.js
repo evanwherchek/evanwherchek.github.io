@@ -10,7 +10,7 @@ function Background() {
             <h1 className="font-poly text-white font-thin text-5xl m-8 text-left underline">Background</h1>
             <div className="flex flex-row align-top justify-center gap-12 m-8">
                 <StatText number={1} smallText={"year of full time software engineering experience"}/>
-                <StatText number={6} smallText={"cloud service provider certifications"}/>
+                <StatText number={6} smallText={"cloud computing provider certifications"}/>
                 <StatText number={8} smallText={"years of building software projects"}/>
             </div>
             <div className="flex flex-row items-center justify-between gap-12 m-8">

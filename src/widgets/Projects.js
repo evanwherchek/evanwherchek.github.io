@@ -6,11 +6,10 @@ import {Button} from "@mui/material";
 import coatails from '../assets/coatails.png';
 import reciperocal from '../assets/reciperocal.png';
 import resutailor from '../assets/resutailor.png';
-import Squares from "./external/Squares";
 
 function Projects () {
     return (
-        <div className="h-screen w-full bg-showcase-grey flex flex-col items-center justify-center">
+        <div className="w-full bg-showcase-grey flex flex-col items-center justify-center">
             <h2 className="font-poly text-white font-thin text-5xl m-16 text-left underline">Featured Projects</h2>
             <div className="flex flex-row flex-wrap items-center justify-center gap-[50px]">
                 <motion.div
