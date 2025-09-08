@@ -5,6 +5,7 @@ import Inspirations from "./widgets/Inspirations";
 import SiteHeader from "./widgets/SiteHeader";
 import Projects from "./widgets/Projects";
 import Background from "./widgets/Background";
+import Contact from "./widgets/Contact";
 
 // Original background color: #101C2D
 
@@ -74,6 +75,9 @@ function App() {
                 </section>
                 <section id="background">
                     <Background />
+                </section>
+                <section id="contact">
+                    <Contact />
                 </section>
             </main>
         </div>
