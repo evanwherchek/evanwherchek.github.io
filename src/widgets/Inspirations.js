@@ -10,7 +10,6 @@ function Inspirations() {
                 transition={{
                     duration: 2,
                     delay: 0.5,
-                    ease: [0, 0.71, 0.2, 1.01],
                 }}>
                 <div className="flex items-center justify-center">
                     <p className="font-poly text-white font-thin text-lg md:text-xl lg:text-2xl m-2">Software engineering</p>
@@ -23,8 +22,6 @@ function Inspirations() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{
                     duration: 2,
-                    delay: 0.5,
-                    ease: [0, 0.71, 0.2, 1.01],
                 }}>
                 <div className="flex items-center justify-center">
                     <p className="font-poly text-comfort-blue font-thin text-lg md:text-xl lg:text-2xl m-2">Gaming</p>
@@ -37,8 +34,6 @@ function Inspirations() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{
                     duration: 2,
-                    delay: 0.5,
-                    ease: [0, 0.71, 0.2, 1.01],
                 }}>
                 <div className="flex items-center justify-center">
                     <p className="font-poly text-white font-thin text-lg md:text-xl lg:text-2xl m-2">Business strategy</p>
@@ -51,8 +46,6 @@ function Inspirations() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{
                     duration: 2,
-                    delay: 0.5,
-                    ease: [0, 0.71, 0.2, 1.01],
                 }}>
                 <div className="flex items-center justify-center">
                     <p className="font-poly text-comfort-blue font-thin text-lg md:text-xl lg:text-2xl m-2">Data science</p>
@@ -65,8 +58,6 @@ function Inspirations() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{
                     duration: 2,
-                    delay: 0.5,
-                    ease: [0, 0.71, 0.2, 1.01],
                 }}>
                 <div className="flex items-center justify-center">
                     <p className="font-poly text-white font-thin text-lg md:text-xl lg:text-2xl m-2">History</p>
