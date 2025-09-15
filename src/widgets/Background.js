@@ -1,10 +1,22 @@
 import tamu from '../assets/tamu-logo.png';
 import nisc from '../assets/nisc-logo.png';
+import resume from '../assets/resume.pdf';
 import {Button} from "@mui/material";
 import {Download} from "@mui/icons-material";
 import StatText from "./custom/StatText";
 
 function Background() {
+    const handleFileDownload = () => {
+        const link = document.createElement("a");
+
+        link.href = resume;
+        link.download = 'Resume - Evan Herchek.pdf';
+
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
     return (
         <div className="h-screen w-full bg-showcase-grey flex flex-col items-center justify-center">
             <h1 className="font-poly text-white font-thin text-5xl m-8 text-left underline">Background</h1>
@@ -48,7 +60,7 @@ function Background() {
                     width: '150px'
                 }}
                 onClick={() => {
-
+                    handleFileDownload();
                 }}
             >
                 Full resume
