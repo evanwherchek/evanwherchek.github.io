@@ -1,6 +1,6 @@
 import ProjectWindow from "./custom/ProjectWindow";
 
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 import {Button} from "@mui/material";
 
 import coatails from '../assets/coatails.png';
