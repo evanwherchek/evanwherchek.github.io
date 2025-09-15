@@ -4,7 +4,7 @@ import resume from '../assets/resume.pdf';
 
 import {Button} from "@mui/material";
 import {Download} from "@mui/icons-material";
-import { motion } from "motion/react"
+import { motion } from "motion/react";
 
 import StatText from "./custom/StatText";
 

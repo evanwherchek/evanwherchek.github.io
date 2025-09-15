@@ -13,17 +13,6 @@ function App() {
     const [showHeader, setShowHeader] = useState(false);
     const titleRef = useRef(null);
 
-    const styles = {
-        backdrop: {
-            backgroundColor: '#ffffff',
-            position: 'absolute',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-        }
-    }
-
     useEffect(() => {
         const observer = new IntersectionObserver(
             ([entry]) => {
@@ -31,7 +20,7 @@ function App() {
                 setShowHeader(!entry.isIntersecting);
             },
             {
-                threshold: 0, // Trigger when any part of the element enters/leaves viewport
+                threshold: 0.3, // Trigger when any part of the element enters/leaves viewport
                 rootMargin: '0px' // No margin around the viewport
             }
         );

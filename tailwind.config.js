@@ -15,6 +15,20 @@ module.exports = {
         'showcase-grey': '#1b1f23',
         'panel-blue': '#010B3C',
         'background-white': '#D5D5D5'
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.8s ease-in-out',
+        'fade-out': 'fadeOut 0.8s ease-in-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        fadeOut: {
+          '0%': { opacity: '1' },
+          '100%': { opacity: '0' },
+        }
       }
     }
   },

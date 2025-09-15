@@ -3,14 +3,24 @@ import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Stack from '@mui/material/Stack';
+import { useState } from 'react';
 
-const SiteHeader = ({ scrollToSection }) => {
+const SiteHeader = ({ scrollToSection, onVisibilityToggle }) => {
+    const [isVisible, setIsVisible] = useState(true);
+
     const handleNavClick = (sectionId) => {
         scrollToSection(sectionId);
     };
 
+    const toggleVisibility = () => {
+        setIsVisible(!isVisible);
+        if (onVisibilityToggle) {
+            onVisibilityToggle(!isVisible);
+        }
+    };
+
     return (
-        <header className="sticky top-0 left-0 h-16 md:h-24 p-2 bg-navy grid grid-cols-[1fr_auto_1fr] items-center w-screen">
+        <header className={`sticky top-0 left-0 h-16 md:h-24 p-2 bg-navy grid grid-cols-[1fr_auto_1fr] items-center w-screen ${isVisible ? 'animate-fade-in' : 'animate-fade-out'}`}>
             <div className="flex items-center justify-center">
                 <div className="hidden lg:flex items-center">
                     <button
