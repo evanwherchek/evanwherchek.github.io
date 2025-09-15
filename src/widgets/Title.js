@@ -14,6 +14,7 @@ function Title() {
                 <motion.div
                     initial={{ opacity: 0, y: 50 }}
                     animate={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
                     transition={{
                         duration: 1,
                         delay: 0.5,
@@ -22,6 +23,7 @@ function Title() {
                     <motion.p
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
+                        viewport={{ once: true }}
                         transition={{ duration: 3 }}>
                         <img src={logo} alt="logo" />
                     </motion.p>
