@@ -13,13 +13,12 @@ function Projects () {
             <h2 className="font-poly text-white font-thin text-5xl m-16 text-left underline">Featured Projects</h2>
             <div className="flex flex-row flex-wrap items-center justify-center gap-[50px]">
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}
+                    initial={{ opacity: 0, y: 25 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{
                         duration: 2,
-                        delay: 1,
-                        ease: [0, 0.71, 0.2, 1.01],
+                        delay: 0.5,
                     }}>
                     <ProjectWindow
                         sourceImage={resutailor}
@@ -31,13 +30,12 @@ function Projects () {
                     />
                 </motion.div>
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}
+                    initial={{ opacity: 0, y: 25 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{
                         duration: 2,
                         delay: 1,
-                        ease: [0, 0.71, 0.2, 1.01],
                     }}>
                     <ProjectWindow
                         sourceImage={coatails}
@@ -49,13 +47,12 @@ function Projects () {
                     />
                 </motion.div>
                 <motion.div
-                    initial={{ opacity: 0, y: 50 }}
+                    initial={{ opacity: 0, y: 25 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{
                         duration: 2,
-                        delay: 1,
-                        ease: [0, 0.71, 0.2, 1.01],
+                        delay: 1.5,
                     }}>
                     <ProjectWindow
                         sourceImage={reciperocal}
