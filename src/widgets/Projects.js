@@ -10,7 +10,7 @@ import resutailor from '../assets/resutailor.png';
 function Projects () {
     return (
         <div className="w-full bg-showcase-grey flex flex-col items-center justify-center">
-            <h2 className="font-poly text-white font-thin text-5xl mt-16 mb-8 text-left underline">Featured Projects</h2>
+            <h2 className="font-poly text-white font-thin text-5xl mt-32 mb-8 underline">Featured Projects</h2>
             <div className="flex flex-row flex-wrap items-center justify-center gap-[50px]">
                 <motion.div
                     initial={{ opacity: 0, y: 25 }}

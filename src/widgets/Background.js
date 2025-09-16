@@ -22,7 +22,7 @@ function Background() {
 
     return (
         <div className="w-full bg-showcase-grey flex flex-col items-center justify-center">
-            <h1 className="font-poly text-white font-thin text-5xl text-left underline">Background</h1>
+            <h1 className="font-poly text-white font-thin text-5xl mt-32 mb-8 underline">Background</h1>
             <motion.div
                 initial={{ opacity: 0}}
                 whileInView={{ opacity: 1}}
@@ -31,7 +31,7 @@ function Background() {
                     duration: 3,
                     delay: 1,
                 }}>
-                <div className="flex flex-row align-top justify-center gap-12 m-8">
+                <div className="flex flex-row align-top justify-center gap-12">
                     <StatText number={1} smallText={"year of full time software engineering experience"}/>
                     <StatText number={6} smallText={"cloud computing provider certifications"}/>
                     <StatText number={8} smallText={"years of building software projects"}/>
@@ -45,11 +45,11 @@ function Background() {
                     duration: 3,
                     delay: 2,
                 }}>
-                <div className="flex flex-row items-center justify-between gap-12 m-8">
+                <div className="flex flex-row items-center justify-between mt-16 gap-12">
                     <div>
                         <h2 className="font-poly text-white underline font-thin text-4xl text-center w-40">Education</h2>
-                        <div className="flex flex-row items-center justify-center">
-                            <img src={tamu} className="w-28" alt="Texas A&M Logo" />
+                        <div className="flex flex-row items-center justify-center mt-1">
+                            <img src={tamu} className="w-20 mr-4" alt="Texas A&M Logo" />
                             <div>
                                 <p className="font-poly text-white text-3xl">Texas A&M University</p>
                                 <p className="font-poly text-white text-2xl">BA in Computing</p>
@@ -59,8 +59,8 @@ function Background() {
                     </div>
                     <div>
                         <h2 className="font-poly text-white underline font-thin text-4xl text-center w-40">Experience</h2>
-                        <div className="flex flex-row items-center justify-center">
-                            <img src={nisc} className="w-28" alt="NISC Logo" />
+                        <div className="flex flex-row items-center justify-center mt-1">
+                            <img src={nisc} className="w-20 mr-4" alt="NISC Logo" />
                             <div>
                                 <p className="font-poly text-white text-3xl">NISC</p>
                                 <p className="font-poly text-white text-2xl">Software Developer</p>
@@ -78,7 +78,7 @@ function Background() {
                     textTransform: 'none',
                     borderRadius: '10px',
                     marginTop: '4rem',
-                    marginBottom: '4rem',
+                    marginBottom: '8rem',
                     width: '150px'
                 }}
                 onClick={() => {
