@@ -43,7 +43,7 @@ function Background() {
                 viewport={{ once: true }}
                 transition={{
                     duration: 3,
-                    delay: 3,
+                    delay: 2,
                 }}>
                 <div className="flex flex-row items-center justify-between gap-12 m-8">
                     <div>
