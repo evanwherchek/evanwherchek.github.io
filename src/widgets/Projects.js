@@ -65,9 +65,11 @@ function Projects () {
                 </motion.div>
             </div>
             <Button
-                variant="contained"
+                variant="text"
                 sx={{
-                    background: 'linear-gradient(to right, #2045FF, #13993B)',
+                    color: '#ffffff',
+                    textDecoration: 'underline',
+                    fontWeight: 'bold',
                     textTransform: 'none',
                     borderRadius: '10px',
                     fontSize: '1rem',

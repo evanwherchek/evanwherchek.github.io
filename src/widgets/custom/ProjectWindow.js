@@ -19,7 +19,7 @@ function ProjectWindow({ sourceImage, projectTitle, description, year, categorie
                         variant="contained"
                         startIcon={<GitHubIcon />}
                         sx={{ 
-                            background: 'linear-gradient(to right, #2045FF, #13993B)',
+                            background: 'linear-gradient(to right, #2045FF, #20a6ff)',
                             textTransform: 'none',
                             borderRadius: '10px',
                             marginTop: '4px',

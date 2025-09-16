@@ -20,7 +20,7 @@ const SiteHeader = ({ scrollToSection, onVisibilityToggle }) => {
     };
 
     return (
-        <header className={`sticky top-0 left-0 h-16 md:h-24 p-2 bg-navy grid grid-cols-[1fr_auto_1fr] items-center w-screen ${isVisible ? 'animate-fade-in' : 'animate-fade-out'}`}>
+        <header className={`sticky top-0 left-0 h-16 md:h-24 p-2 bg-navy grid grid-cols-[1fr_auto_1fr] items-center w-screen z-50 ${isVisible ? 'animate-fade-in' : 'animate-fade-out'}`}>
             <div className="flex items-center justify-center">
                 <div className="hidden lg:flex items-center">
                     <button

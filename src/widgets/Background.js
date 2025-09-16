@@ -74,7 +74,7 @@ function Background() {
                 variant="contained"
                 startIcon={<Download />}
                 sx={{
-                    background: 'linear-gradient(to right, #2045FF, #13993B)',
+                    background: 'linear-gradient(to right, #2045FF, #20a6ff)',
                     textTransform: 'none',
                     borderRadius: '10px',
                     marginTop: '4rem',
