@@ -21,8 +21,8 @@ function Background() {
     }
 
     return (
-        <div className="h-screen w-full bg-showcase-grey flex flex-col items-center justify-center">
-            <h1 className="font-poly text-white font-thin text-5xl m-8 text-left underline">Background</h1>
+        <div className="w-full bg-showcase-grey flex flex-col items-center justify-center">
+            <h1 className="font-poly text-white font-thin text-5xl text-left underline">Background</h1>
             <motion.div
                 initial={{ opacity: 0}}
                 whileInView={{ opacity: 1}}
@@ -78,6 +78,7 @@ function Background() {
                     textTransform: 'none',
                     borderRadius: '10px',
                     marginTop: '4rem',
+                    marginBottom: '4rem',
                     width: '150px'
                 }}
                 onClick={() => {

@@ -41,7 +41,7 @@ function App() {
         if (element) {
             element.scrollIntoView({
                 behavior: 'smooth',
-                block: 'start'
+                block: 'center'
             });
         }
     };
