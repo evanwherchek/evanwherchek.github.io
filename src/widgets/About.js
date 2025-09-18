@@ -1,5 +1,7 @@
 import headshot from '../assets/headshot.png';
+
 import { motion } from "motion/react"
+import Signature from "./custom/Signature";
 
 function About() {
     return (
@@ -19,6 +21,7 @@ function About() {
                 <div className="w-96">
                     <h2 className="font-poly text-black font-thin text-xl mt-0 text-left">Hello!</h2>
                     <p className="font-poly text-black font-thin text-lg mt-0 text-left">My name is Evan and I am a Software Developer currently based in St. Louis at National Information Solutions Cooperative. Every day, I contribute to a back end Java and SQL program used in the generation of utility billing statements for rural electric cooperatives.</p>
+                    <Signature />
                 </div>
             </div>
         </div>
