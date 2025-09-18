@@ -12,43 +12,36 @@ const SiteHeader = ({ scrollToSection, onVisibilityToggle }) => {
         scrollToSection(sectionId);
     };
 
-    const toggleVisibility = () => {
-        setIsVisible(!isVisible);
-        if (onVisibilityToggle) {
-            onVisibilityToggle(!isVisible);
-        }
-    };
-
     return (
-        <header className={`sticky top-0 left-0 h-16 md:h-24 p-2 bg-navy grid grid-cols-[1fr_auto_1fr] items-center w-screen z-50 ${isVisible ? 'animate-fade-in' : 'animate-fade-out'}`}>
+        <header className={`sticky top-0 left-0 h-16 p-2 bg-navy grid grid-cols-[1fr_auto_1fr] items-center w-screen z-50 ${isVisible ? 'animate-fade-in' : 'animate-fade-out'}`}>
             <div className="flex items-center justify-center">
                 <div className="hidden lg:flex items-center">
                     <button
-                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm md:px-4 md:text-base font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
+                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
                         onClick={() => handleNavClick('about')}
                     >
                         About
                     </button>
                     <button
-                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm md:px-4 md:text-base font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
+                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
                         onClick={() => handleNavClick('inspirations')}
                     >
                         Inspirations
                     </button>
                     <button
-                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm md:px-4 md:text-base font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
+                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
                         onClick={() => handleNavClick('projects')}
                     >
                         Projects
                     </button>
                     <button
-                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm md:px-4 md:text-base font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
+                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
                         onClick={() => handleNavClick('background')}
                     >
                         Background
                     </button>
                     <button
-                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm md:px-4 md:text-base font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
+                        className="bg-none border-none cursor-pointer px-2 py-2 text-sm font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
                         onClick={() => handleNavClick('contact')}
                     >
                         Contact
@@ -57,7 +50,7 @@ const SiteHeader = ({ scrollToSection, onVisibilityToggle }) => {
             </div>
 
             <div className="flex items-center justify-center">
-                <img className="w-48 md:w-64 lg:w-[300px]" src={logo} alt="logo" />
+                <img className="w-48" src={logo} alt="logo" />
             </div>
 
             <div className="flex items-center justify-center">
