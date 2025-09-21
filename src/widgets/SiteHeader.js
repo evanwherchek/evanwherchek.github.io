@@ -1,4 +1,4 @@
-import logo from "../assets/logo-2.png";
+// import logo from "../assets/logo-2.png";
 import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
@@ -50,7 +50,7 @@ const SiteHeader = ({ scrollToSection, onVisibilityToggle }) => {
             </div>
 
             <div className="flex items-center justify-center">
-                <img className="w-48" src={logo} alt="logo" />
+                <img className="w-48" src="/images/logo-2.png" alt="logo" />
             </div>
 
             <div className="flex items-center justify-center">

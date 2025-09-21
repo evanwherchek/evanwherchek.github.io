@@ -1,4 +1,4 @@
-import logo from '../assets/logo-1.png';
+// import logo from '../assets/logo-1.png';
 import { motion } from "motion/react"
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
@@ -33,7 +33,7 @@ function Title({ scrollToSection }) {
                             animate={{ opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 3 }}>
-                            <img src={logo} alt="logo" />
+                            <img src="/images/logo-1.png" alt="logo" />
                         </motion.p>
                     </motion.div>
                 </div>

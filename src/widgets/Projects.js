@@ -3,9 +3,9 @@ import ProjectWindow from "./custom/ProjectWindow";
 import { motion } from "motion/react";
 import {Button} from "@mui/material";
 
-import coatails from '../assets/coatails.png';
-import reciperocal from '../assets/reciperocal.png';
-import resutailor from '../assets/resutailor.png';
+// import coatails from '../assets/coatails.png';
+// import reciperocal from '../assets/reciperocal.png';
+// import resutailor from '../assets/resutailor.png';
 
 function Projects () {
     return (
@@ -21,7 +21,7 @@ function Projects () {
                         delay: 0.5,
                     }}>
                     <ProjectWindow
-                        sourceImage={resutailor}
+                        sourceImage="/images/resutailor.png"
                         projectTitle={"Resutailor"}
                         description={"Generate a fine-tuned resume for any application."}
                         year="2024"
@@ -38,7 +38,7 @@ function Projects () {
                         delay: 1,
                     }}>
                     <ProjectWindow
-                        sourceImage={coatails}
+                        sourceImage="/images/coatails.png"
                         projectTitle={"Coatails"}
                         description={"Make strong professional connections IRL."}
                         year="2021 - 2024"
@@ -55,7 +55,7 @@ function Projects () {
                         delay: 1.5,
                     }}>
                     <ProjectWindow
-                        sourceImage={reciperocal}
+                        sourceImage="/images/reciperocal.png"
                         projectTitle={"RecipeRocal"}
                         description={"Gamify your nutrition and reach your goals."}
                         year="2024"

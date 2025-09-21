@@ -1,15 +1,13 @@
-import { useState, useEffect, useRef } from 'react';
-import Title from "./widgets/Title";
-import About from "./widgets/About";
-import Inspirations from "./widgets/Inspirations";
-import SiteHeader from "./widgets/SiteHeader";
-import Projects from "./widgets/Projects";
-import Background from "./widgets/Background";
-import Contact from "./widgets/Contact";
+import {useEffect, useRef, useState} from "react";
+import SiteHeader from "../src/widgets/SiteHeader";
+import Title from "../src/widgets/Title";
+import About from "../src/widgets/About";
+import Inspirations from "../src/widgets/Inspirations";
+import Projects from "../src/widgets/Projects";
+import Background from "../src/widgets/Background";
+import Contact from "../src/widgets/Contact";
 
-// Original background color: #101C2D
-
-function App() {
+function Index() {
     const [showHeader, setShowHeader] = useState(false);
     const titleRef = useRef(null);
 
@@ -73,4 +71,4 @@ function App() {
     );
 }
 
-export default App;
+export default Index;

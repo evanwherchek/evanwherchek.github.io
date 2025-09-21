@@ -2,11 +2,15 @@
 const { fontFamily } = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       fontFamily: {
-        'poly': ['"poly"', ...fontFamily.sans],
+        'poly': ['var(--font-poly)', ...fontFamily.sans],
+        'inter': ['var(--font-inter)', ...fontFamily.sans],
       },
       colors: {
         'navy': '#101C2D',
