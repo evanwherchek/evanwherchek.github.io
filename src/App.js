@@ -51,7 +51,7 @@ function App() {
             {showHeader && <SiteHeader scrollToSection={scrollToSection} />}
             <main>
                 <section id="home" ref={titleRef}>
-                    <Title />
+                    <Title scrollToSection={scrollToSection} />
                 </section>
                 <section id="about">
                     <About />
