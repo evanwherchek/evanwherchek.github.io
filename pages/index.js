@@ -9,9 +9,29 @@ import Contact from "../src/widgets/Contact";
 
 function Index() {
     const [showHeader, setShowHeader] = useState(false);
+    const [isMobile, setIsMobile] = useState(false);
+    const [isClient, setIsClient] = useState(false);
     const titleRef = useRef(null);
 
     useEffect(() => {
+        setIsClient(true);
+
+        const checkMobile = () => {
+            const userAgent = window.navigator.userAgent.toLowerCase();
+            const mobileKeywords = ['mobile', 'android', 'iphone', 'ipad', 'tablet', 'blackberry', 'windows phone'];
+
+            return mobileKeywords.some(keyword => userAgent.includes(keyword)) ||
+                   window.innerWidth <= 768;
+        };
+
+        setIsMobile(checkMobile());
+
+        const handleResize = () => {
+            setIsMobile(checkMobile());
+        };
+
+        window.addEventListener('resize', handleResize);
+
         const observer = new IntersectionObserver(
             ([entry]) => {
                 // Show header when Title is NOT intersecting (not in view)
@@ -28,6 +48,7 @@ function Index() {
         }
 
         return () => {
+            window.removeEventListener('resize', handleResize);
             if (titleRef.current) {
                 observer.unobserve(titleRef.current);
             }
@@ -44,29 +65,66 @@ function Index() {
         }
     };
 
+    if (!isClient) {
+        return (
+            <div>
+                <div>
+                    <main>
+                        <section id="home" ref={titleRef}>
+                            <Title scrollToSection={scrollToSection} />
+                        </section>
+                        <section id="about">
+                            <About />
+                        </section>
+                        <section id="inspirations">
+                            <Inspirations />
+                        </section>
+                        <section id="projects">
+                            <Projects />
+                        </section>
+                        <section id="background">
+                            <Background />
+                        </section>
+                        <section id="contact">
+                            <Contact />
+                        </section>
+                    </main>
+                </div>
+            </div>
+        );
+    }
+
     return (
         <div>
-            {showHeader && <SiteHeader scrollToSection={scrollToSection} />}
-            <main>
-                <section id="home" ref={titleRef}>
-                    <Title scrollToSection={scrollToSection} />
-                </section>
-                <section id="about">
-                    <About />
-                </section>
-                <section id="inspirations">
-                    <Inspirations />
-                </section>
-                <section id="projects">
-                    <Projects />
-                </section>
-                <section id="background">
-                    <Background />
-                </section>
-                <section id="contact">
-                    <Contact />
-                </section>
-            </main>
+            {isMobile ? (
+                <div style={{ padding: '20px', textAlign: 'center' }}>
+                    <p>Mobile version coming soon! Please visit on desktop for the full experience.</p>
+                </div>
+            ) : (
+                <div>
+                    {showHeader && <SiteHeader scrollToSection={scrollToSection} />}
+                    <main>
+                        <section id="home" ref={titleRef}>
+                            <Title scrollToSection={scrollToSection} />
+                        </section>
+                        <section id="about">
+                            <About />
+                        </section>
+                        <section id="inspirations">
+                            <Inspirations />
+                        </section>
+                        <section id="projects">
+                            <Projects />
+                        </section>
+                        <section id="background">
+                            <Background />
+                        </section>
+                        <section id="contact">
+                            <Contact />
+                        </section>
+                    </main>
+                </div>
+            )}
         </div>
     );
 }
