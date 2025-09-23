@@ -6,6 +6,7 @@ import Inspirations from "../src/widgets/Inspirations";
 import Projects from "../src/widgets/Projects";
 import Background from "../src/widgets/Background";
 import Contact from "../src/widgets/Contact";
+import Linktree from "../src/widgets/Linktree";
 
 function Index() {
     const [showHeader, setShowHeader] = useState(false);
@@ -97,9 +98,7 @@ function Index() {
     return (
         <div>
             {isMobile ? (
-                <div style={{ padding: '20px', textAlign: 'center' }}>
-                    <p>Mobile version coming soon! Please visit on desktop for the full experience.</p>
-                </div>
+                <Linktree />
             ) : (
                 <div>
                     {showHeader && <SiteHeader scrollToSection={scrollToSection} />}
