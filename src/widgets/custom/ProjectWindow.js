@@ -3,6 +3,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import CategoryChip from "./CategoryChip";
 
 function ProjectWindow({ sourceImage, projectTitle, description, year, categories, link }) {
+    // eslint-disable-next-line react/jsx-key
     const chipItems = categories.map(item => <CategoryChip text={item} />);
 
     return (
