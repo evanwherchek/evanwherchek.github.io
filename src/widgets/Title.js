@@ -34,7 +34,7 @@ function Title({ scrollToSection }) {
                             animate={{ opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 3 }}>
-                            <Image src="/images/logo-1.png" alt="logo" />
+                            <Image src="/images/logo-1.png" width={550} height={550} alt="logo" />
                         </motion.p>
                     </motion.div>
                 </div>

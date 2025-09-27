@@ -28,7 +28,7 @@ function Linktree() {
                         animate={{ opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 3 }}>
-                        <Image className="w-10/12 mx-auto mb-4" src="/images/logo-1.png" alt="logo" />
+                        <Image width={300} height={300} className="w-10/12 mx-auto mb-4" src="/images/logo-1.png" alt="logo" />
                     </motion.p>
                 </motion.div>
                 <Button

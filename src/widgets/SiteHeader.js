@@ -51,7 +51,7 @@ const SiteHeader = ({ scrollToSection, onVisibilityToggle }) => {
             </div>
 
             <div className="flex items-center justify-center">
-                <Image className="w-48" src="/images/logo-2.png" alt="logo" />
+                <Image width={192} height={192} src="/images/logo-2.png" alt="logo" />
             </div>
 
             <div className="flex items-center justify-center">

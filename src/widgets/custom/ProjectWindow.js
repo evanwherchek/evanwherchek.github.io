@@ -11,7 +11,7 @@ function ProjectWindow({ sourceImage, projectTitle, description, year, categorie
             <h2 className="font-poly underline text-3xl text-white ml-6 mt-8">{projectTitle}</h2>
             <p className="font-poly text-white font-thin text-xl text-left w-3/4 ml-6 mt-2">{description}</p>
             <div className="flex mt-auto">
-                <Image src={sourceImage} className="bg-background-white w-48 h-48 rounded-tr-2xl rounded-bl-2xl p-5 object-contain" alt={projectTitle}/>
+                <Image src={sourceImage} width={192} height={192} className="bg-background-white rounded-tr-2xl rounded-bl-2xl p-5 object-contain" alt={projectTitle}/>
                 <div className="m-2" />
                 <div className="flex flex-col">
                     <h3 className="text-white underline mb-3">{year}</h3>
