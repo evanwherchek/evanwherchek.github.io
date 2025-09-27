@@ -39,8 +39,8 @@ function Index() {
                 setShowHeader(!entry.isIntersecting);
             },
             {
-                threshold: 0.3, // Trigger when any part of the element enters/leaves viewport
-                rootMargin: '0px' // No margin around the viewport
+                threshold: 0.3, // Trigger when 10% of the element enters/leaves viewport
+                rootMargin: '-50px 0px 0px 0px' // Add some margin to trigger earlier
             }
         );
 
@@ -71,6 +71,7 @@ function Index() {
         return (
             <div>
                 <div>
+                    {showHeader && <SiteHeader scrollToSection={scrollToSection} />}
                     <main>
                         <section id="home" ref={titleRef}>
                             <Title scrollToSection={scrollToSection} />
