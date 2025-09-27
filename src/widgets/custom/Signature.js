@@ -40,12 +40,13 @@ function Signature() {
                 }
             );
 
-            observer.observe(svgRef.current);
+            const currentSvgRef = svgRef.current;
+            observer.observe(currentSvgRef);
 
             // Cleanup observer on unmount
             return () => {
-                if (svgRef.current) {
-                    observer.unobserve(svgRef.current);
+                if (currentSvgRef) {
+                    observer.unobserve(currentSvgRef);
                 }
             };
         }

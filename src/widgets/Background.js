@@ -6,6 +6,7 @@ import {Download} from "@mui/icons-material";
 import { motion } from "motion/react";
 
 import StatText from "./custom/StatText";
+import Image from "next/image";
 
 function Background() {
     const handleFileDownload = () => {
@@ -48,7 +49,7 @@ function Background() {
                     <div>
                         <h2 className="font-poly text-white underline font-thin text-4xl text-center w-40">Education</h2>
                         <div className="flex flex-row items-center justify-center mt-1">
-                            <img src="/images/tamu-logo.png" className="w-20 mr-4" alt="Texas A&M Logo" />
+                            <Image src="/images/tamu-logo.png" className="w-20 mr-4" alt="Texas A&M Logo" />
                             <div>
                                 <p className="font-poly text-white text-3xl">Texas A&M University</p>
                                 <p className="font-poly text-white text-2xl">BA in Computing</p>
@@ -59,7 +60,7 @@ function Background() {
                     <div>
                         <h2 className="font-poly text-white underline font-thin text-4xl text-center w-40">Experience</h2>
                         <div className="flex flex-row items-center justify-center mt-1">
-                            <img src="/images/nisc-logo.png" className="w-20 mr-4" alt="NISC Logo" />
+                            <Image src="/images/nisc-logo.png" className="w-20 mr-4" alt="NISC Logo" />
                             <div>
                                 <p className="font-poly text-white text-3xl">NISC</p>
                                 <p className="font-poly text-white text-2xl">Software Developer</p>

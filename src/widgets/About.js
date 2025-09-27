@@ -1,12 +1,13 @@
 // import headshot from '../assets/headshot.png';
 
 import Signature from "./custom/Signature";
+import Image from "next/image";
 
 function About() {
     return (
         <div className="w-full flex bg-soft-white items-center justify-center">
             <div className="mt-52 mb-52 flex items-center justify-center">
-                <img className="size-80" src="/images/headshot.png" alt="Evan Herchek" />
+                <Image className="size-80" src="/images/headshot.png" alt="Evan Herchek" />
                 <div className="w-12 ml-8"/>
                 <div className="w-96">
                     <h2 className="font-poly text-black font-thin text-3xl mt-4 text-left">Hello!</h2>

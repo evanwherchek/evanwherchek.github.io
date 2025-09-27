@@ -4,6 +4,7 @@ import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 import Threads from './external/Threads';
 import IconButton from "@mui/material/IconButton";
+import Image from "next/image";
 
 function Title({ scrollToSection }) {
     const handleNavClick = (sectionId) => {
@@ -33,7 +34,7 @@ function Title({ scrollToSection }) {
                             animate={{ opacity: 1 }}
                             viewport={{ once: true }}
                             transition={{ duration: 3 }}>
-                            <img src="/images/logo-1.png" alt="logo" />
+                            <Image src="/images/logo-1.png" alt="logo" />
                         </motion.p>
                     </motion.div>
                 </div>

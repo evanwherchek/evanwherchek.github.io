@@ -3,6 +3,7 @@ import {motion} from "motion/react";
 import {Button} from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Image from "next/image";
 
 function Linktree() {
     return (
@@ -27,7 +28,7 @@ function Linktree() {
                         animate={{ opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 3 }}>
-                        <img className="w-10/12 mx-auto mb-4" src="/images/logo-1.png" alt="logo" />
+                        <Image className="w-10/12 mx-auto mb-4" src="/images/logo-1.png" alt="logo" />
                     </motion.p>
                 </motion.div>
                 <Button

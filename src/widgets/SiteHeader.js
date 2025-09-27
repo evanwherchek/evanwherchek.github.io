@@ -4,6 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Stack from '@mui/material/Stack';
 import { useState } from 'react';
+import Image from "next/image";
 
 const SiteHeader = ({ scrollToSection, onVisibilityToggle }) => {
     const [isVisible, setIsVisible] = useState(true);
@@ -50,7 +51,7 @@ const SiteHeader = ({ scrollToSection, onVisibilityToggle }) => {
             </div>
 
             <div className="flex items-center justify-center">
-                <img className="w-48" src="/images/logo-2.png" alt="logo" />
+                <Image className="w-48" src="/images/logo-2.png" alt="logo" />
             </div>
 
             <div className="flex items-center justify-center">

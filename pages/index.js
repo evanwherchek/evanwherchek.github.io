@@ -44,14 +44,15 @@ function Index() {
             }
         );
 
-        if (titleRef.current) {
-            observer.observe(titleRef.current);
+        const currentTitleRef = titleRef.current;
+        if (currentTitleRef) {
+            observer.observe(currentTitleRef);
         }
 
         return () => {
             window.removeEventListener('resize', handleResize);
-            if (titleRef.current) {
-                observer.unobserve(titleRef.current);
+            if (currentTitleRef) {
+                observer.unobserve(currentTitleRef);
             }
         };
     }, []);
