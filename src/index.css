@@ -15,3 +15,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Force burger button visibility */
+.bm-burger-button {
+  position: fixed !important;
+  width: 36px !important;
+  height: 30px !important;
+  left: 16px !important;
+  top: 16px !important;
+  z-index: 9999 !important;
+}
+
+.bm-burger-bars {
+  background: #373a47 !important;
+}

@@ -7,6 +7,7 @@ import Projects from "../src/widgets/Projects";
 import Background from "../src/widgets/Background";
 import Contact from "../src/widgets/Contact";
 import Linktree from "../src/widgets/Linktree";
+import MobileMenu from "../src/widgets/MobileMenu";
 
 function Index() {
     const [showHeader, setShowHeader] = useState(false);
@@ -100,7 +101,10 @@ function Index() {
     return (
         <div>
             {isMobile ? (
-                <Linktree />
+                <div>
+                    <MobileMenu scrollToSection={scrollToSection} />
+                    <Linktree />
+                </div>
             ) : (
                 <div>
                     {showHeader && <SiteHeader scrollToSection={scrollToSection} />}
