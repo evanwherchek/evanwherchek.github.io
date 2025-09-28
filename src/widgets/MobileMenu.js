@@ -1,4 +1,4 @@
-import { bubble as Menu } from 'react-burger-menu';
+import { slide as Menu } from 'react-burger-menu';
 import { useState } from 'react';
 import Image from "next/image";
 
@@ -18,50 +18,60 @@ function MobileMenu() {
         // Add navigation logic here
     };
 
+    const styles = {
+        whiteBars: {
+            'background-color': 'white !important;'
+        }
+    }
+
     return (
         <Menu
             isOpen={isOpen}
             onStateChange={handleStateChange}
-            width={'500px'}
+            width={'100%'}
+            height={'100%'}
             burgerButtonClassName="fixed top-4 left-4 z-50"
             menuClassName="bg-navy"
             morphShapeClassName="fill-navy"
             itemListClassName="text-white"
-            overlayClassName="bg-black bg-opacity-50"
             styles={{
-                bmItemList: {
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    height: '100%',
-                    padding: '0'
+                bmBurgerBars: {
+                    backgroundColor: 'white'
                 }
             }}
         >
-            <div className="flex flex-col items-center space-y-6">
-                <Image src="/images/logo-2.png" width={200} height={200} alt="logo" />
-                <button
-                    className="bg-none border-none cursor-pointer px-2 py-2 text-md font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
-                    onClick={() => handleNavClick('about')}
+            <div style={{
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                height: '100%',
+                gap: '20px'
+            }}>
+                <Image src="/images/logo-2.png" width={300} height={300} alt="logo" />
+                <button className="text-lg"
+                        onClick={() => handleNavClick('about')}
+                >
+                    Home
+                </button>
+                <button className="text-lg"
+                        onClick={() => handleNavClick('about')}
                 >
                     About
                 </button>
-                <button
-                    className="bg-none border-none cursor-pointer px-2 py-2 text-md font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
-                    onClick={() => handleNavClick('background')}
+                <button className="text-lg"
+                        onClick={() => handleNavClick('background')}
                 >
                     Background
                 </button>
-                <button
-                    className="bg-none border-none cursor-pointer px-2 py-2 text-md font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
-                    onClick={() => handleNavClick('contact')}
+                <button className="text-lg"
+                        onClick={() => handleNavClick('contact')}
                 >
                     Contact
                 </button>
             </div>
         </Menu>
     );
-};
+}
 
 export default MobileMenu;
