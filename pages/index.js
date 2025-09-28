@@ -102,7 +102,7 @@ function Index() {
         <div>
             {isMobile ? (
                 <div>
-                    <MobileMenu scrollToSection={scrollToSection} />
+                    <MobileMenu/>
                     <Linktree />
                 </div>
             ) : (

@@ -1,6 +1,7 @@
 import { slide as Menu } from 'react-burger-menu';
 import { useState } from 'react';
 import Image from "next/image";
+import Link from 'next/link'
 
 function MobileMenu() {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,17 +13,6 @@ function MobileMenu() {
     const closeMenu = () => {
         setIsOpen(false);
     };
-
-    const handleNavClick = (section) => {
-        closeMenu();
-        // Add navigation logic here
-    };
-
-    const styles = {
-        whiteBars: {
-            'background-color': 'white !important;'
-        }
-    }
 
     return (
         <Menu
@@ -49,26 +39,18 @@ function MobileMenu() {
                 gap: '20px'
             }}>
                 <Image src="/images/logo-2.png" width={300} height={300} alt="logo" />
-                <button className="text-lg"
-                        onClick={() => handleNavClick('about')}
-                >
+                <Link href="/" className="text-lg">
                     Home
-                </button>
-                <button className="text-lg"
-                        onClick={() => handleNavClick('about')}
-                >
+                </Link>
+                <Link href="/about" className="text-lg">
                     About
-                </button>
-                <button className="text-lg"
-                        onClick={() => handleNavClick('background')}
-                >
+                </Link>
+                <Link href="/background" className="text-lg">
                     Background
-                </button>
-                <button className="text-lg"
-                        onClick={() => handleNavClick('contact')}
-                >
+                </Link>
+                <Link href="/contact" className="text-lg">
                     Contact
-                </button>
+                </Link>
             </div>
         </Menu>
     );
