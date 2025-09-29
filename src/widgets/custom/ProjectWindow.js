@@ -13,18 +13,20 @@ function ProjectWindow({ sourceImage, projectTitle, description, year, categorie
             <div className="flex mt-auto">
                 <Image src={sourceImage} width={192} height={192} className="bg-background-white rounded-tr-2xl rounded-bl-2xl p-5 object-contain" alt={projectTitle}/>
                 <div className="m-2" />
-                <div className="flex flex-col">
-                    <h3 className="text-white underline mb-3">{year}</h3>
-                    <ul>{chipItems}</ul>
-                    <Button 
+                <div className="flex flex-col justify-between h-full">
+                    <div>
+                        <h3 className="text-white underline mb-3">{year}</h3>
+                        <ul>{chipItems}</ul>
+                    </div>
+                    <Button
                         variant="contained"
                         startIcon={<GitHubIcon />}
-                        sx={{ 
+                        sx={{
                             background: 'linear-gradient(to right, #2045FF, #20a6ff)',
                             textTransform: 'none',
                             borderRadius: '10px',
-                            marginTop: '4px',
-                            width: '150px'
+                            width: '150px',
+                            marginBottom: '30px',
                         }}
                         onClick={() => {
                             window.open(link, "_blank");
