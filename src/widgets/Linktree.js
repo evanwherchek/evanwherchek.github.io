@@ -31,38 +31,48 @@ function Linktree() {
                         <Image width={300} height={300} className="w-10/12 mx-auto mb-4" src="/images/logo-1.png" alt="logo" />
                     </motion.p>
                 </motion.div>
-                <Button
-                    variant="contained"
-                    startIcon={<LinkedInIcon />}
-                    sx={{
-                        background: 'linear-gradient(to right, #2045FF, #20a6ff)',
-                        textTransform: 'none',
-                        borderRadius: '10px',
-                        width: '33.333%',
-                        margin: '0.25rem'
-                    }}
-                    onClick={() => {
-                        window.open("https://www.linkedin.com/in/evan-herchek/", "_blank");
-                    }}
-                >
-                    LinkedIn
-                </Button>
-                <Button
-                    variant="contained"
-                    startIcon={<GitHubIcon />}
-                    sx={{
-                        background: 'linear-gradient(to right, #2045FF, #20a6ff)',
-                        textTransform: 'none',
-                        borderRadius: '10px',
-                        width: '33.333%',
-                        margin: '0.25rem'
-                    }}
-                    onClick={() => {
-                        window.open("https://github.com/evanwherchek", "_blank");
-                    }}
-                >
-                    GitHub
-                </Button>
+                <motion.div
+                    className="flex flex-col"
+                    initial={{ opacity: 0, y: 50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 1,
+                        delay: 1,
+                        ease: [0, 0.71, 0.2, 1.01],
+                    }}>
+                    <Button
+                        variant="contained"
+                        startIcon={<LinkedInIcon />}
+                        sx={{
+                            background: 'linear-gradient(to right, #2045FF, #20a6ff)',
+                            textTransform: 'none',
+                            borderRadius: '10px',
+                            margin: '0.25rem'
+                        }}
+                        onClick={() => {
+                            window.open("https://www.linkedin.com/in/evan-herchek/", "_blank");
+                        }}
+                    >
+                        LinkedIn
+                    </Button>
+                    <Button
+                        variant="contained"
+                        startIcon={<GitHubIcon />}
+                        sx={{
+                            background: 'linear-gradient(to right, #2045FF, #20a6ff)',
+                            textTransform: 'none',
+                            borderRadius: '10px',
+                            margin: '0.25rem'
+                        }}
+                        onClick={() => {
+                            window.open("https://github.com/evanwherchek", "_blank");
+                        }}
+                    >
+                        GitHub
+                    </Button>
+                </motion.div>
+
             </div>
         </div>
     );
