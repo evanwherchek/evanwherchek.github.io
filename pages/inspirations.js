@@ -3,7 +3,7 @@ import MobileMenu from "../src/widgets/MobileMenu";
 
 function Inspirations() {
     return (
-        <div className="h-screen flex items-center justify-center flex-col bg-navy">
+        <div className="h-screen w-full flex items-center justify-center flex-col bg-navy">
             <MobileMenu />
             <h2 className="font-poly text-white font-thin text-xl md:text-2xl lg:text-3xl mt-0 text-left underline m-4">Things that I enjoy</h2>
             <motion.div
