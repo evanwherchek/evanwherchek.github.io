@@ -45,6 +45,9 @@ function MobileMenu() {
                 <Link href="/about" className="text-lg">
                     About
                 </Link>
+                <Link href="/inspirations" className="text-lg">
+                    Inspirations
+                </Link>
                 <Link href="/qualifications" className="text-lg">
                     Qualifications
                 </Link>
