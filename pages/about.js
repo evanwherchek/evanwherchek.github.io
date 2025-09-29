@@ -19,12 +19,6 @@ function About () {
                     <Signature />
                 </div>
             </div>
-            <IconButton
-                size="small"
-                aria-label="Scroll down"
-                onClick={() => handleNavClick("about")}>
-                <KeyboardArrowDownIcon className="text-black" />
-            </IconButton>
         </div>
     );
 }
