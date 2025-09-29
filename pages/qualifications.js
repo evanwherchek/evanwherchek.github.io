@@ -6,12 +6,12 @@ import {Button} from "@mui/material";
 import {Download} from "@mui/icons-material";
 import ProjectWindow from "../src/widgets/custom/ProjectWindow";
 
-function Background () {
+function Qualifications () {
     return (
         <div>
             <div className="w-full bg-showcase-grey flex flex-col items-center justify-center">
                 <MobileMenu />
-                <h1 className="font-poly text-white font-thin text-3xl mt-8 mb-4 underline">Background</h1>
+                <h1 className="font-poly text-white font-thin text-3xl mt-8 mb-4 underline">Qualifications</h1>
                 <motion.div
                     initial={{ opacity: 0}}
                     whileInView={{ opacity: 1}}
@@ -155,4 +155,4 @@ function Background () {
     );
 }
 
-export default Background;
+export default Qualifications;

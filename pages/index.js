@@ -4,7 +4,7 @@ import Title from "../src/widgets/Title";
 import About from "../src/widgets/About";
 import Inspirations from "../src/widgets/Inspirations";
 import Projects from "../src/widgets/Projects";
-import Background from "../src/widgets/Background";
+import Qualifications from "../src/widgets/Qualifications";
 import Contact from "../src/widgets/Contact";
 import Linktree from "../src/widgets/Linktree";
 import MobileMenu from "../src/widgets/MobileMenu";
@@ -86,8 +86,8 @@ function Index() {
                         <section id="projects">
                             <Projects />
                         </section>
-                        <section id="background">
-                            <Background />
+                        <section id="qualifications">
+                            <Qualifications />
                         </section>
                         <section id="contact">
                             <Contact />
@@ -122,7 +122,7 @@ function Index() {
                             <Projects />
                         </section>
                         <section id="background">
-                            <Background />
+                            <Qualifications />
                         </section>
                         <section id="contact">
                             <Contact />

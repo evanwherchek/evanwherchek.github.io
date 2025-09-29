@@ -37,9 +37,9 @@ const SiteHeader = ({ scrollToSection, onVisibilityToggle }) => {
                     </button>
                     <button
                         className="bg-none border-none cursor-pointer px-2 py-2 text-sm font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"
-                        onClick={() => handleNavClick('background')}
+                        onClick={() => handleNavClick('qualifications')}
                     >
-                        Background
+                        Qualifications
                     </button>
                     <button
                         className="bg-none border-none cursor-pointer px-2 py-2 text-sm font-inter text-white no-underline rounded transition-colors duration-300 hover:bg-gray-200 hover:bg-opacity-20"

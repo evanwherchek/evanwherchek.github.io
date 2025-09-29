@@ -1,6 +1,3 @@
-// import tamu from '../assets/tamu-logo.png';
-// import nisc from '../assets/nisc-logo.png';
-
 import {Button} from "@mui/material";
 import {Download} from "@mui/icons-material";
 import { motion } from "motion/react";
@@ -8,7 +5,7 @@ import { motion } from "motion/react";
 import StatText from "./custom/StatText";
 import Image from "next/image";
 
-function Background() {
+function Qualifications() {
     const handleFileDownload = () => {
         const link = document.createElement("a");
 
@@ -22,7 +19,7 @@ function Background() {
 
     return (
         <div className="w-full bg-showcase-grey flex flex-col items-center justify-center">
-            <h1 className="font-poly text-white font-thin text-5xl mt-32 mb-8 underline">Background</h1>
+            <h1 className="font-poly text-white font-thin text-5xl mt-32 mb-8 underline">Qualifications</h1>
             <motion.div
                 initial={{ opacity: 0}}
                 whileInView={{ opacity: 1}}
@@ -91,4 +88,4 @@ function Background() {
     );
 }
 
-export default Background;
+export default Qualifications;
