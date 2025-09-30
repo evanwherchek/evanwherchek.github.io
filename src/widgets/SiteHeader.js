@@ -3,15 +3,27 @@ import IconButton from '@mui/material/IconButton';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Stack from '@mui/material/Stack';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from "next/image";
 
-const SiteHeader = ({ scrollToSection, onVisibilityToggle }) => {
-    const [isVisible, setIsVisible] = useState(true);
+const SiteHeader = ({ scrollToSection, isVisible = true }) => {
+    const [shouldRender, setShouldRender] = useState(isVisible);
+
+    useEffect(() => {
+        if (isVisible) {
+            setShouldRender(true);
+        } else {
+            // Delay unmounting to allow fade-out animation
+            const timer = setTimeout(() => setShouldRender(false), 800);
+            return () => clearTimeout(timer);
+        }
+    }, [isVisible]);
 
     const handleNavClick = (sectionId) => {
         scrollToSection(sectionId);
     };
+
+    if (!shouldRender) return null;
 
     return (
         <header className={`sticky top-0 left-0 h-16 p-2 bg-navy grid grid-cols-[1fr_auto_1fr] items-center w-screen z-50 ${isVisible ? 'animate-fade-in' : 'animate-fade-out'}`}>

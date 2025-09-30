@@ -72,7 +72,7 @@ function Index() {
         return (
             <div>
                 <div>
-                    {showHeader && <SiteHeader scrollToSection={scrollToSection} />}
+                    <SiteHeader scrollToSection={scrollToSection} isVisible={showHeader} />
                     <main>
                         <section id="home" ref={titleRef}>
                             <Title scrollToSection={scrollToSection} />
@@ -107,7 +107,7 @@ function Index() {
                 </div>
             ) : (
                 <div>
-                    {showHeader && <SiteHeader scrollToSection={scrollToSection} />}
+                    <SiteHeader scrollToSection={scrollToSection} isVisible={showHeader} />
                     <main>
                         <section id="home" ref={titleRef}>
                             <Title scrollToSection={scrollToSection} />
