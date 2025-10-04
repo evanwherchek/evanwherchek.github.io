@@ -28,7 +28,7 @@ function Inspirations() {
                 <div className="flex items-center justify-center">
                     <p className="font-poly text-comfort-blue font-thin text-lg md:text-xl lg:text-2xl m-2">Gaming</p>
                     <p className="font-poly text-white font-thin text-lg md:text-xl lg:text-2xl m-2">Travel</p>
-                    <p className="font-poly text-comfort-blue font-thin text-lg md:text-xl lg:text-2xl m-2">Automation</p>
+                    <p className="font-poly text-comfort-blue font-thin text-lg md:text-xl lg:text-2xl m-2">DevOps</p>
                 </div>
             </motion.div>
             <motion.div
