@@ -3,15 +3,11 @@ import ProjectWindow from "./custom/ProjectWindow";
 import { motion } from "motion/react";
 import {Button} from "@mui/material";
 
-// import coatails from '../assets/coatails.png';
-// import reciperocal from '../assets/reciperocal.png';
-// import resutailor from '../assets/resutailor.png';
-
 function Projects () {
     return (
         <div className="w-full bg-showcase-grey flex flex-col items-center justify-center">
             <h2 className="font-poly text-white font-thin text-5xl mt-32 mb-8 underline">Featured Projects</h2>
-            <div className="flex flex-row flex-wrap items-center justify-center gap-[50px]">
+            <div className="flex flex-wrap items-center justify-center gap-[50px]">
                 <motion.div
                     initial={{ opacity: 0, y: 25 }}
                     whileInView={{ opacity: 1, y: 0 }}

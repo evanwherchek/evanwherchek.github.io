@@ -34,19 +34,20 @@ function Qualifications() {
                     <StatText number={8} smallText={"years of building software projects"}/>
                 </div>
             </motion.div>
-            <motion.div
-                initial={{ opacity: 0}}
-                whileInView={{ opacity: 1}}
-                viewport={{ once: true }}
-                transition={{
-                    duration: 3,
-                    delay: 1.5,
-                }}>
-                <div className="flex flex-row items-center justify-between mt-16 gap-12">
+            <div className="flex flex-row m-16">
+                <motion.div
+                    initial={{ opacity: 0}}
+                    whileInView={{ opacity: 1}}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 3,
+                        delay: 1.5,
+                    }}
+                    className="flex flex-col w-1/2 gap-8">
                     <div>
-                        <h2 className="font-poly text-white underline font-thin text-4xl text-center w-40">Education</h2>
-                        <div className="flex flex-row items-center justify-center mt-1">
-                            <Image src="/images/tamu-logo.png" width={80} height={80} className="mr-4" alt="Texas A&M Logo" />
+                        <h2 className="font-poly text-white underline font-thin text-3xl text-left">Education</h2>
+                        <div className="flex flex-row items-center justify-start gap-8">
+                            <Image src="/images/tamu-logo.png" width={0} height={0} className="h-20 w-auto" alt="Texas A&M Logo" />
                             <div>
                                 <p className="font-poly text-white text-3xl">Texas A&M University</p>
                                 <p className="font-poly text-white text-2xl">BA in Computing</p>
@@ -55,9 +56,9 @@ function Qualifications() {
                         </div>
                     </div>
                     <div>
-                        <h2 className="font-poly text-white underline font-thin text-4xl text-center w-40">Experience</h2>
-                        <div className="flex flex-row items-center justify-center mt-1">
-                            <Image src="/images/nisc-logo.png" width={80} height={80} className="mr-4" alt="NISC Logo" />
+                        <h2 className="font-poly text-white underline font-thin text-3xl text-left">Experience</h2>
+                        <div className="flex flex-row items-center justify-start gap-8">
+                            <Image src="/images/nisc-logo.png" width={0} height={0} className="h-22 w-auto" alt="NISC Logo" />
                             <div>
                                 <p className="font-poly text-white text-3xl">NISC</p>
                                 <p className="font-poly text-white text-2xl">Software Developer</p>
@@ -65,8 +66,77 @@ function Qualifications() {
                             </div>
                         </div>
                     </div>
-                </div>
-            </motion.div>
+                </motion.div>
+                <motion.div
+                    initial={{ opacity: 0}}
+                    whileInView={{ opacity: 1}}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 3,
+                        delay: 1.75,
+                    }}
+                    className="flex flex-col w-1/2 items-center justify-center gap-2">
+                    <h2 className="font-poly text-white font-thin text-3xl underline">Top languages and technologies</h2>
+                    <div className="flex flex-wrap w-2/3 items-center justify-center gap-2">
+                        <Image
+                            src="https://img.shields.io/badge/-Java-000?style=flat&logo=openjdk&logoColor=007396"
+                            alt="Java badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                        <Image
+                            src="https://img.shields.io/badge/-Python-000?style=flat&logo=Python"
+                            alt="Python badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                        <Image
+                            src="https://img.shields.io/badge/-Javascript-000?style=flat&logo=JavaScript"
+                            alt="Javascript badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                        <Image
+                            src="https://img.shields.io/badge/-SQL-000?style=flat&logo=MySQL"
+                            alt="SQL badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                        <Image
+                            src="https://custom-icon-badges.demolab.com/badge/-AWS-000?style=flat&logo=aws&logoColor=FF9900"
+                            alt="AWS badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                        <Image
+                            src="https://img.shields.io/badge/-Google%20Cloud-000?style=flat&logo=Google-Cloud&logoColor=4285F4"
+                            alt="GCP badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                        <Image
+                            src="https://img.shields.io/badge/-Flutter-000?style=flat&logo=Flutter&logoColor=02569B"
+                            alt="Flutter badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                    </div>
+                </motion.div>
+            </div>
             <Button
                 variant="contained"
                 startIcon={<Download />}

@@ -61,25 +61,76 @@ function Qualifications () {
                         </div>
                     </div>
                 </motion.div>
-                <Button
-                    variant="contained"
-                    startIcon={<Download/>}
-                    sx={{
-                        background: 'linear-gradient(to right, #2045FF, #20a6ff)',
-                        textTransform: 'none',
-                        borderRadius: '10px',
-                        marginTop: '4rem',
-                        marginBottom: '2rem',
-                        width: '150px'
+                <motion.div
+                    initial={{ opacity: 0}}
+                    whileInView={{ opacity: 1}}
+                    viewport={{ once: true }}
+                    transition={{
+                        duration: 3,
+                        delay: 1.75,
                     }}
-                    onClick={() => {
-                        handleFileDownload();
-                    }}
-                >
-                    Full resume
-                </Button>
+                    className="flex flex-col w-1/2 items-center justify-center gap-2 mt-16">
+                    <h2 className="font-poly text-white font-thin text-2xl underline text-center">Top languages and technologies</h2>
+                    <div className="flex flex-wrap w-2/3 items-center justify-center gap-2">
+                        <Image
+                            src="https://img.shields.io/badge/-Java-000?style=flat&logo=openjdk&logoColor=007396"
+                            alt="Java badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                        <Image
+                            src="https://img.shields.io/badge/-Python-000?style=flat&logo=Python"
+                            alt="Python badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                        <Image
+                            src="https://img.shields.io/badge/-Javascript-000?style=flat&logo=JavaScript"
+                            alt="Javascript badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                        <Image
+                            src="https://img.shields.io/badge/-SQL-000?style=flat&logo=MySQL"
+                            alt="SQL badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                        <Image
+                            src="https://custom-icon-badges.demolab.com/badge/-AWS-000?style=flat&logo=aws&logoColor=FF9900"
+                            alt="AWS badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                        <Image
+                            src="https://img.shields.io/badge/-Google%20Cloud-000?style=flat&logo=Google-Cloud&logoColor=4285F4"
+                            alt="GCP badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                        <Image
+                            src="https://img.shields.io/badge/-Flutter-000?style=flat&logo=Flutter&logoColor=02569B"
+                            alt="Flutter badge"
+                            width={0}
+                            height={0}
+                            className="h-7 w-auto"
+                            unoptimized
+                        />
+                    </div>
+                </motion.div>
             </div>
-
             <div className="w-full bg-showcase-grey flex flex-col items-center justify-center">
                 <h2 className="font-poly text-white font-thin text-3xl mt-32 mb-8 underline">Featured Projects</h2>
                 <div className="flex flex-row flex-wrap items-center justify-center gap-[50px]">
@@ -151,6 +202,23 @@ function Qualifications () {
                     }}
                 >
                     See all projects on my GitHub
+                </Button>
+                <Button
+                    variant="contained"
+                    startIcon={<Download/>}
+                    sx={{
+                        background: 'linear-gradient(to right, #2045FF, #20a6ff)',
+                        textTransform: 'none',
+                        borderRadius: '10px',
+                        marginTop: '4rem',
+                        marginBottom: '2rem',
+                        width: '150px'
+                    }}
+                    onClick={() => {
+                        handleFileDownload();
+                    }}
+                >
+                    Full resume
                 </Button>
             </div>
         </div>
