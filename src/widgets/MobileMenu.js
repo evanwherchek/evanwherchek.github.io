@@ -34,7 +34,6 @@ function MobileMenu() {
                     left: 0,
                     height: '100vh',
                     overflow: 'hidden',
-                    backgroundColor: '#001f3f'
                 },
                 bmMenuWrap: {
                     position: 'fixed',
