@@ -1,13 +1,11 @@
-import MobileMenu from "../src/widgets/MobileMenu";
 import Image from "next/image";
 import Signature from "../src/widgets/custom/Signature";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import IconButton from "@mui/material/IconButton";
+import MobileHeader from "../src/widgets/MobileHeader";
 
 function About () {
     return (
-        <div className="w-full min-h-screen bg-soft-white flex flex-col justify-center items-center">
-            <MobileMenu />
+        <div className="w-full min-h-screen bg-soft-white flex flex-col justify-center items-center pt-16">
+            <MobileHeader />
             <div className="justify-center flex mt-2">
                 <Image width={200} height={200} src="/images/headshot.png" alt="Evan Herchek" />
             </div>

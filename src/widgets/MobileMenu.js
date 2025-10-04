@@ -18,8 +18,8 @@ function MobileMenu() {
         <Menu
             isOpen={isOpen}
             onStateChange={handleStateChange}
-            width={'100%'}
-            height={'100%'}
+            width={'280px'}
+            height={'100vh'}
             burgerButtonClassName="fixed top-4 left-4 z-50"
             menuClassName="bg-navy"
             morphShapeClassName="fill-navy"
@@ -27,6 +27,19 @@ function MobileMenu() {
             styles={{
                 bmBurgerBars: {
                     backgroundColor: 'white'
+                },
+                bmMenu: {
+                    position: 'fixed',
+                    top: 0,
+                    left: 0,
+                    height: '100vh',
+                    overflow: 'hidden',
+                    backgroundColor: '#001f3f'
+                },
+                bmMenuWrap: {
+                    position: 'fixed',
+                    height: '100vh',
+                    top: 0
                 }
             }}
         >

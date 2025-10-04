@@ -1,10 +1,10 @@
 import {motion} from "motion/react";
-import MobileMenu from "../src/widgets/MobileMenu";
+import MobileHeader from "../src/widgets/MobileHeader";
 
 function Inspirations() {
     return (
-        <div className="h-screen w-full flex items-center justify-center flex-col bg-navy">
-            <MobileMenu />
+        <div className="h-screen w-full flex items-center justify-center flex-col bg-navy pt-16">
+            <MobileHeader />
             <h2 className="font-poly text-white font-thin text-xl md:text-2xl lg:text-3xl mt-0 text-left underline m-4">Things that I enjoy</h2>
             <motion.div
                 initial={{ opacity: 0, x: 50 }}
