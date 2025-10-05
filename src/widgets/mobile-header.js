@@ -1,4 +1,4 @@
-import MobileMenu from "./MobileMenu";
+import MobileMenu from "./mobile-menu";
 import Image from "next/image";
 
 function MobileHeader() {

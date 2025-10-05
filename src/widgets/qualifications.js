@@ -2,7 +2,7 @@ import {Button} from "@mui/material";
 import {Download} from "@mui/icons-material";
 import { motion } from "motion/react";
 
-import StatText from "./custom/StatText";
+import StatText from "./custom/stat-text";
 import Image from "next/image";
 
 function Qualifications() {

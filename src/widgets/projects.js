@@ -1,4 +1,4 @@
-import ProjectWindow from "./custom/ProjectWindow";
+import ProjectWindow from "./custom/project-window";
 
 import { motion } from "motion/react";
 import {Button} from "@mui/material";
