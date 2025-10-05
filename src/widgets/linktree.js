@@ -1,4 +1,4 @@
-import Threads from "./external/Threads";
+import Threads from "./external/threads";
 import {motion} from "motion/react";
 import {Button} from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";

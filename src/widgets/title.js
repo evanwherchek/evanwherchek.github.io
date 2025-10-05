@@ -1,7 +1,7 @@
 import { motion } from "motion/react"
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
-import Threads from './external/Threads';
+import Threads from './external/threads';
 import IconButton from "@mui/material/IconButton";
 import Image from "next/image";
 

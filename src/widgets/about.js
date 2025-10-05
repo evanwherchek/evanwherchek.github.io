@@ -1,4 +1,4 @@
-import Signature from "./custom/Signature";
+import Signature from "./custom/signature";
 import Image from "next/image";
 
 function About() {
