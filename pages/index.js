@@ -12,12 +12,9 @@ import MobileMenu from "../src/widgets/MobileMenu";
 function Index() {
     const [showHeader, setShowHeader] = useState(false);
     const [isMobile, setIsMobile] = useState(false);
-    const [isClient, setIsClient] = useState(false);
     const titleRef = useRef(null);
 
     useEffect(() => {
-        setIsClient(true);
-
         const checkMobile = () => {
             const userAgent = window.navigator.userAgent.toLowerCase();
             const mobileKeywords = ['mobile', 'android', 'iphone', 'ipad', 'tablet', 'blackberry', 'windows phone'];
@@ -68,43 +65,10 @@ function Index() {
         }
     };
 
-    if (!isClient) {
-        return (
-            <div>
-                <div>
-                    <SiteHeader scrollToSection={scrollToSection} isVisible={showHeader} />
-                    <main>
-                        <section id="home" ref={titleRef}>
-                            <Title scrollToSection={scrollToSection} />
-                        </section>
-                        <section id="about">
-                            <About />
-                        </section>
-                        <section id="inspirations">
-                            <Inspirations />
-                        </section>
-                        <section id="projects">
-                            <Projects />
-                        </section>
-                        <section id="qualifications">
-                            <Qualifications />
-                        </section>
-                        <section id="contact">
-                            <Contact />
-                        </section>
-                    </main>
-                </div>
-            </div>
-        );
-    }
-
     return (
         <div>
             {isMobile ? (
-                <div>
-                    <MobileMenu/>
-                    <Linktree />
-                </div>
+                <Linktree />
             ) : (
                 <div>
                     <SiteHeader scrollToSection={scrollToSection} isVisible={showHeader} />
