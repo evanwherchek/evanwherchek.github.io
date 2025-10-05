@@ -42,7 +42,7 @@ function Projects() {
             projectTitle={'Coatails'}
             description={'Make strong professional connections IRL.'}
             year="2021 - 2024"
-            link="https://github.com/evanwherchek/resutailor"
+            link="https://github.com/evanwherchek/coatails"
             categories={['Mobile', 'Full Stack']}
           />
         </motion.div>
@@ -56,12 +56,12 @@ function Projects() {
           }}
         >
           <ProjectWindow
-            sourceImage="/images/reciperocal.png"
-            projectTitle={'RecipeRocal'}
-            description={'Gamify your nutrition and reach your goals.'}
-            year="2024"
-            link="https://github.com/evanwherchek/resutailor"
-            categories={['Mobile', 'Team-developed']}
+            sourceImage="/images/portfolio-site.png"
+            projectTitle={'Portfolio Site'}
+            description={'A complete developer website.'}
+            year="2025"
+            link="https://github.com/evanwherchek/portfolio-site"
+            categories={['Web']}
           />
         </motion.div>
       </div>
