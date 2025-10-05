@@ -1,4 +1,3 @@
-// import logo from '../assets/logo-1.png';
 import { motion } from "motion/react"
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 

@@ -1,5 +1,3 @@
-// import headshot from '../assets/headshot.png';
-
 import Signature from "./custom/Signature";
 import Image from "next/image";
 

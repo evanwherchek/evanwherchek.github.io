@@ -7,7 +7,6 @@ import Projects from "../src/widgets/Projects";
 import Qualifications from "../src/widgets/Qualifications";
 import Contact from "../src/widgets/Contact";
 import Linktree from "../src/widgets/Linktree";
-import MobileMenu from "../src/widgets/MobileMenu";
 
 function Index() {
     const [showHeader, setShowHeader] = useState(false);
