@@ -4,8 +4,8 @@ const nextConfig = {
   trailingSlash: true,
   images: {
     unoptimized: true,
-    domains: ['img.shields.io']
-  }
-}
+    domains: ['img.shields.io'],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

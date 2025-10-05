@@ -1,24 +1,21 @@
 /** @type {import('tailwindcss').Config} */
-const { fontFamily } = require('tailwindcss/defaultTheme')
+const { fontFamily } = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ['./pages/**/*.{js,ts,jsx,tsx}', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       fontFamily: {
-        'poly': ['var(--font-poly)', ...fontFamily.sans],
-        'inter': ['var(--font-inter)', ...fontFamily.sans],
+        poly: ['var(--font-poly)', ...fontFamily.sans],
+        inter: ['var(--font-inter)', ...fontFamily.sans],
       },
       colors: {
-        'navy': '#101C2D',
+        navy: '#101C2D',
         'soft-white': '#FFF8F4',
         'comfort-blue': '#20b3ff',
         'showcase-grey': '#1b1f23',
         'panel-blue': '#010B3C',
-        'background-white': '#D5D5D5'
+        'background-white': '#D5D5D5',
       },
       animation: {
         'fade-in': 'fadeIn 0.8s ease-in-out',
@@ -32,9 +29,9 @@ module.exports = {
         fadeOut: {
           '0%': { opacity: '1' },
           '100%': { opacity: '0' },
-        }
-      }
-    }
+        },
+      },
+    },
   },
   plugins: [],
-}
+};
