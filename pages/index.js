@@ -1,12 +1,12 @@
 import {useEffect, useRef, useState} from "react";
-import SiteHeader from "../src/widgets/SiteHeader";
-import Title from "../src/widgets/Title";
-import About from "../src/widgets/About";
-import Inspirations from "../src/widgets/Inspirations";
-import Projects from "../src/widgets/Projects";
-import Qualifications from "../src/widgets/Qualifications";
-import Contact from "../src/widgets/Contact";
-import Linktree from "../src/widgets/Linktree";
+import SiteHeader from "../src/widgets/site-header";
+import Title from "../src/widgets/title";
+import About from "../src/widgets/about";
+import Inspirations from "../src/widgets/inspirations";
+import Projects from "../src/widgets/projects";
+import Qualifications from "../src/widgets/qualifications";
+import Contact from "../src/widgets/contact";
+import Linktree from "../src/widgets/linktree";
 
 function Index() {
     const [showHeader, setShowHeader] = useState(false);

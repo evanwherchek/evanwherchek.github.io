@@ -1,5 +1,5 @@
 import {motion} from "motion/react";
-import MobileHeader from "../src/widgets/MobileHeader";
+import MobileHeader from "../src/widgets/mobile-header";
 
 function Inspirations() {
     return (

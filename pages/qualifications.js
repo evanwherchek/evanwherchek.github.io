@@ -1,10 +1,10 @@
 import {motion} from "motion/react";
-import StatText from "../src/widgets/custom/StatText";
+import StatText from "../src/widgets/custom/stat-text";
 import Image from "next/image";
 import {Button} from "@mui/material";
 import {Download} from "@mui/icons-material";
-import ProjectWindow from "../src/widgets/custom/ProjectWindow";
-import MobileHeader from "../src/widgets/MobileHeader";
+import ProjectWindow from "../src/widgets/custom/project-window";
+import MobileHeader from "../src/widgets/mobile-header";
 
 function Qualifications () {
     return (

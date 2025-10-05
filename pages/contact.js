@@ -1,6 +1,6 @@
 import {Button} from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import MobileHeader from "../src/widgets/MobileHeader";
+import MobileHeader from "../src/widgets/mobile-header";
 
 function Contact () {
     return (

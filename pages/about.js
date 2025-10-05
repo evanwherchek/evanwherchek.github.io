@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Signature from "../src/widgets/custom/Signature";
-import MobileHeader from "../src/widgets/MobileHeader";
+import Signature from "../src/widgets/custom/signature";
+import MobileHeader from "../src/widgets/mobile-header";
 
 function About () {
     return (
