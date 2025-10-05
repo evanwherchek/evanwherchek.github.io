@@ -121,7 +121,7 @@ function Index() {
                         <section id="projects">
                             <Projects />
                         </section>
-                        <section id="background">
+                        <section id="qualifications">
                             <Qualifications />
                         </section>
                         <section id="contact">
