@@ -4,10 +4,12 @@ import {Button} from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import Image from "next/image";
+import MobileMenu from "./MobileMenu";
 
 function Linktree() {
     return (
         <div className="h-screen w-full bg-navy flex flex-col items-center justify-center">
+            <MobileMenu/>
             <Threads
                 amplitude={2}
                 distance={0}
