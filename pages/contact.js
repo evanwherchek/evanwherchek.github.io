@@ -4,9 +4,9 @@ import MobileHeader from '../src/widgets/mobile-header';
 
 function Contact() {
   return (
-    <div className="w-full h-screen flex flex-col bg-gray-800 items-center justify-center pt-16">
+    <div className="w-full h-screen flex flex-col bg-showcase-grey items-center justify-center pt-16">
       <MobileHeader />
-      <h1 className="font-poly text-white font-thin text-xl mt-0 ml-8 mr-8 mb-2 text-center">
+      <h1 className="font-poly text-white font-thin text-3xl mt-0 px-8 mb-6 text-center">
         Building something cool? Let&#39;s talk about it!
       </h1>
       <div className="flex flex-row items-center justify-between gap-8 m-1">
@@ -17,7 +17,6 @@ function Contact() {
             background: 'linear-gradient(to right, #2045FF, #20a6ff)',
             textTransform: 'none',
             borderRadius: '10px',
-            marginTop: '4px',
             width: '250px',
           }}
           onClick={() => {

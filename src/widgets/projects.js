@@ -5,8 +5,8 @@ import { Button } from '@mui/material';
 
 function Projects() {
   return (
-    <div className="w-full bg-showcase-grey flex flex-col items-center justify-center">
-      <h2 className="font-poly text-white font-thin text-5xl mt-32 mb-8 underline">
+    <div className="w-full bg-showcase-grey flex flex-col items-center justify-center py-32">
+      <h2 className="font-poly text-white font-thin text-5xl mb-12 underline">
         Featured Projects
       </h2>
       <div className="flex flex-wrap items-center justify-center gap-[50px]">
@@ -74,7 +74,7 @@ function Projects() {
           textTransform: 'none',
           borderRadius: '10px',
           fontSize: '1rem',
-          margin: '4rem',
+          marginTop: '3rem',
         }}
         onClick={() => {
           window.open('https://github.com/evanwherchek', '_blank');

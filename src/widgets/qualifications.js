@@ -18,8 +18,8 @@ function Qualifications() {
   };
 
   return (
-    <div className="w-full bg-showcase-grey flex flex-col items-center justify-center">
-      <h1 className="font-poly text-white font-thin text-5xl mt-32 mb-8 underline">
+    <div className="w-full bg-showcase-grey flex flex-col items-center justify-center py-32">
+      <h1 className="font-poly text-white font-thin text-5xl mb-12 underline">
         Qualifications
       </h1>
       <motion.div
@@ -46,7 +46,7 @@ function Qualifications() {
           />
         </div>
       </motion.div>
-      <div className="flex flex-row m-16">
+      <div className="flex flex-row mt-16 gap-12">
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -55,10 +55,10 @@ function Qualifications() {
             duration: 3,
             delay: 1.5,
           }}
-          className="flex flex-col w-1/2 gap-8"
+          className="flex flex-col w-1/2 gap-12"
         >
           <div>
-            <h2 className="font-poly text-white underline font-thin text-3xl text-left">
+            <h2 className="font-poly text-white underline font-thin text-3xl text-left mb-4">
               Education
             </h2>
             <div className="flex flex-row items-center justify-start gap-8">
@@ -81,7 +81,7 @@ function Qualifications() {
             </div>
           </div>
           <div>
-            <h2 className="font-poly text-white underline font-thin text-3xl text-left">
+            <h2 className="font-poly text-white underline font-thin text-3xl text-left mb-4">
               Experience
             </h2>
             <div className="flex flex-row items-center justify-start gap-8">
@@ -110,9 +110,9 @@ function Qualifications() {
             duration: 3,
             delay: 1.75,
           }}
-          className="flex flex-col w-1/2 items-center justify-center gap-2"
+          className="flex flex-col w-1/2 items-center justify-center gap-4"
         >
-          <h2 className="font-poly text-white font-thin text-3xl underline">
+          <h2 className="font-poly text-white font-thin text-3xl underline mb-4">
             Top languages and technologies
           </h2>
           <div className="flex flex-wrap w-2/3 items-center justify-center gap-2">
@@ -182,8 +182,7 @@ function Qualifications() {
           background: 'linear-gradient(to right, #2045FF, #20a6ff)',
           textTransform: 'none',
           borderRadius: '10px',
-          marginTop: '4rem',
-          marginBottom: '8rem',
+          marginTop: '3rem',
           width: '150px',
         }}
         onClick={() => {

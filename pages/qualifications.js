@@ -7,11 +7,22 @@ import ProjectWindow from '../src/widgets/custom/project-window';
 import MobileHeader from '../src/widgets/mobile-header';
 
 function Qualifications() {
+  const handleFileDownload = () => {
+    const link = document.createElement('a');
+
+    link.href = '/resume.pdf';
+    link.download = 'Resume - Evan Herchek';
+
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div>
-      <div className="w-full bg-showcase-grey flex flex-col items-center justify-center pt-16">
+      <div className="w-full bg-showcase-grey flex flex-col items-center justify-center pt-16 pb-12">
         <MobileHeader />
-        <h1 className="font-poly text-white font-thin text-3xl mt-8 mb-4 underline">
+        <h1 className="font-poly text-white font-thin text-4xl mt-8 mb-8 underline">
           Qualifications
         </h1>
         <motion.div
@@ -47,9 +58,9 @@ function Qualifications() {
             delay: 1.5,
           }}
         >
-          <div className="flex flex-col items-center justify-between mt-16 gap-12">
+          <div className="flex flex-col items-center justify-between mt-12 gap-12 px-4">
             <div>
-              <h2 className="font-poly text-white underline font-thin text-2xl text-left w-40">
+              <h2 className="font-poly text-white underline font-thin text-2xl text-center mb-4">
                 Education
               </h2>
               <div className="flex flex-row items-center justify-center mt-1">
@@ -74,7 +85,7 @@ function Qualifications() {
               </div>
             </div>
             <div>
-              <h2 className="font-poly text-white underline font-thin text-2xl text-left w-40">
+              <h2 className="font-poly text-white underline font-thin text-2xl text-center mb-4">
                 Experience
               </h2>
               <div className="flex flex-row items-center justify-center mt-1">
@@ -104,9 +115,9 @@ function Qualifications() {
             duration: 3,
             delay: 1.75,
           }}
-          className="flex flex-col w-1/2 items-center justify-center gap-2 mt-16"
+          className="flex flex-col items-center justify-center gap-4 mt-12 px-4"
         >
-          <h2 className="font-poly text-white font-thin text-2xl underline text-center">
+          <h2 className="font-poly text-white font-thin text-2xl underline text-center mb-4">
             Top languages and technologies
           </h2>
           <div className="flex flex-wrap w-2/3 items-center justify-center gap-2">
@@ -169,8 +180,8 @@ function Qualifications() {
           </div>
         </motion.div>
       </div>
-      <div className="w-full bg-showcase-grey flex flex-col items-center justify-center">
-        <h2 className="font-poly text-white font-thin text-3xl mt-32 mb-8 underline">
+      <div className="w-full bg-showcase-grey flex flex-col items-center justify-center pb-16">
+        <h2 className="font-poly text-white font-thin text-4xl mt-16 mb-12 underline">
           Featured Projects
         </h2>
         <div className="flex flex-row flex-wrap items-center justify-center gap-[50px]">
@@ -220,12 +231,12 @@ function Qualifications() {
             }}
           >
             <ProjectWindow
-              sourceImage="/images/reciperocal.png"
-              projectTitle={'RecipeRocal'}
-              description={'Gamify your nutrition and reach your goals.'}
-              year="2024"
-              link="https://github.com/evanwherchek/resutailor"
-              categories={['Mobile', 'Team-developed']}
+                sourceImage="/images/portfolio-site.png"
+                projectTitle={'Portfolio Site'}
+                description={'A complete developer website.'}
+                year="2025"
+                link="https://github.com/evanwherchek/portfolio-site"
+                categories={['Web']}
             />
           </motion.div>
         </div>
@@ -238,7 +249,7 @@ function Qualifications() {
             textTransform: 'none',
             borderRadius: '10px',
             fontSize: '1rem',
-            margin: '4rem',
+            marginTop: '3rem',
           }}
           onClick={() => {
             window.open('https://github.com/evanwherchek', '_blank');
@@ -253,8 +264,7 @@ function Qualifications() {
             background: 'linear-gradient(to right, #2045FF, #20a6ff)',
             textTransform: 'none',
             borderRadius: '10px',
-            marginTop: '4rem',
-            marginBottom: '2rem',
+            marginTop: '2rem',
             width: '150px',
           }}
           onClick={() => {

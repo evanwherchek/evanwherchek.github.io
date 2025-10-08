@@ -3,11 +3,11 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 function Contact() {
   return (
-    <div className="w-full pt-52 pb-52 flex flex-col bg-gray-800 items-center justify-center">
-      <h1 className="font-poly text-white font-thin text-xl mt-0 text-left m-1">
+    <div className="w-full py-32 flex flex-col bg-showcase-grey items-center justify-center">
+      <h1 className="font-poly text-white font-thin text-3xl text-center mb-6">
         Building something cool? Let&#39;s talk about it!
       </h1>
-      <div className="flex flex-row items-center justify-between gap-8 m-1">
+      <div className="flex flex-row items-center justify-between gap-8">
         <Button
           variant="contained"
           startIcon={<LinkedInIcon />}
@@ -15,7 +15,6 @@ function Contact() {
             background: 'linear-gradient(to right, #2045FF, #20a6ff)',
             textTransform: 'none',
             borderRadius: '10px',
-            marginTop: '4px',
             width: '250px',
           }}
           onClick={() => {

@@ -10,7 +10,7 @@ function Linktree() {
   return (
     <div className="h-screen w-full bg-navy flex flex-col items-center justify-center">
       <MobileMenu />
-      <Threads amplitude={2} distance={0} enableMouseInteraction={false} />
+      <Threads amplitude={1} distance={0} enableMouseInteraction={false} />
       <div className="absolute flex flex-col items-center justify-center inset-0">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -55,7 +55,7 @@ function Linktree() {
               background: 'linear-gradient(to right, #2045FF, #20a6ff)',
               textTransform: 'none',
               borderRadius: '10px',
-              margin: '0.25rem',
+              margin: '0.5rem',
             }}
             onClick={() => {
               window.open(
@@ -73,7 +73,7 @@ function Linktree() {
               background: 'linear-gradient(to right, #2045FF, #20a6ff)',
               textTransform: 'none',
               borderRadius: '10px',
-              margin: '0.25rem',
+              margin: '0.5rem',
             }}
             onClick={() => {
               window.open('https://github.com/evanwherchek', '_blank');
