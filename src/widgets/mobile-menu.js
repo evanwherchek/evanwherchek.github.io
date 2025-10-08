@@ -39,6 +39,7 @@ function MobileMenu() {
           position: 'fixed',
           height: '100vh',
           top: 0,
+          left: 0,
         },
       }}
     >
