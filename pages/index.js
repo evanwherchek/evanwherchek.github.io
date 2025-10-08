@@ -7,6 +7,7 @@ import Projects from '../src/widgets/projects';
 import Qualifications from '../src/widgets/qualifications';
 import Contact from '../src/widgets/contact';
 import Linktree from '../src/widgets/linktree';
+import Head from "next/head";
 
 function Index() {
   const [showHeader, setShowHeader] = useState(false);
@@ -76,6 +77,9 @@ function Index() {
 
   return (
     <div>
+      <Head>
+        <title>Evan Herchek</title>
+      </Head>
       {isMobile ? (
         <Linktree />
       ) : (
