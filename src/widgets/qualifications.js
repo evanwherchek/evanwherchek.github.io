@@ -10,7 +10,7 @@ function Qualifications() {
     const link = document.createElement('a');
 
     link.href = '/resume.pdf';
-    link.download = 'Resume - Evan Herchek.pdf';
+    link.download = 'Resume - Evan Herchek';
 
     document.body.appendChild(link);
     link.click();
