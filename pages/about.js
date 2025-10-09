@@ -15,7 +15,7 @@ function About() {
         />
       </div>
       <div className="max-w-md">
-        <h2 className="font-poly text-black font-thin text-lg text-left mt-6">
+        <h2 className="font-poly text-black font-thin text-3xl text-left mt-6">
           Hello!
         </h2>
         <p className="font-poly text-black font-thin text-lg text-left mt-6">
