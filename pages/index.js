@@ -9,6 +9,22 @@ import Contact from '../src/widgets/contact';
 import Linktree from '../src/widgets/linktree';
 import Head from "next/head";
 
+export const metadata = {
+  title: 'Evan Herchek',
+  openGraph: {
+    title: 'Evan Herchek',
+    url: 'https://evanherchek.dev',
+    images: [
+      {
+        url: 'https://evanherchek.dev/public/images/opengraph-preview.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Site preview image'
+      }
+    ]
+  }
+}
+
 function Index() {
   const [showHeader, setShowHeader] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
