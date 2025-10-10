@@ -9,22 +9,6 @@ import Contact from '../src/widgets/contact';
 import Linktree from '../src/widgets/linktree';
 import Head from "next/head";
 
-export const metadata = {
-  title: 'Evan Herchek',
-  openGraph: {
-    title: 'Evan Herchek',
-    url: 'https://evanherchek.dev',
-    images: [
-      {
-        url: 'https://evanherchek.dev/public/images/opengraph-preview.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Site preview image'
-      }
-    ]
-  }
-}
-
 function Index() {
   const [showHeader, setShowHeader] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -95,6 +79,21 @@ function Index() {
     <div>
       <Head>
         <title>Evan Herchek</title>
+        <meta name="description" content="Evan Herchek - Software Developer" />
+
+        <meta property="og:title" content="Evan Herchek" />
+        <meta property="og:description" content="Evan Herchek - Software Developer" />
+        <meta property="og:url" content="https://evanherchek.dev" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://evanherchek.dev/images/opengraph-preview.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Site preview image" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Evan Herchek" />
+        <meta name="twitter:description" content="Evan Herchek - Software Developer" />
+        <meta name="twitter:image" content="https://evanherchek.dev/images/opengraph-preview.jpg" />
       </Head>
       {isMobile ? (
         <Linktree />
